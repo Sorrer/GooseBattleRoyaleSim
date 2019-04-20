@@ -8,6 +8,10 @@ public class PlayerMain : MonoBehaviour
 
 	public ControlPlayer controlPlayer;
 	public Animator ani;
+
+	public DamageTrigger biteTrigger;
+
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -22,6 +26,7 @@ public class PlayerMain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		
 		if (!foundAllBaseComponents) {
 			setBaseComponents();
 		}
@@ -52,6 +57,12 @@ public class PlayerMain : MonoBehaviour
 			ani.SetTrigger("StopHonk");
 		}
 
+		bool isBiting = ani.GetCurrentAnimatorStateInfo(1).IsName("Bite");
+		if (isBiting && !this.biteTrigger.EnableDamage) {
+			this.biteTrigger.StartDamage();
+		} else if(!isBiting && this.biteTrigger.EnableDamage) {
+			this.biteTrigger.StopDamage();
+		}
 
 	}
 
