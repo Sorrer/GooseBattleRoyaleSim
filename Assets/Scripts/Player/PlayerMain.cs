@@ -10,6 +10,7 @@ public class PlayerMain : MonoBehaviour
 	public Animator ani;
 
 	public DamageTrigger biteTrigger;
+	public GooseHonkSphereEmitter honkEmitter;
 
 
 	// Start is called before the first frame update
@@ -52,9 +53,15 @@ public class PlayerMain : MonoBehaviour
 		//Honk
 		if (Input.GetMouseButtonDown(1)) {
 			ani.SetTrigger("StartHonk");
+
+
+			if(!honkEmitter.Emit)
+			honkEmitter.StartEmit();
 		}
 		if (Input.GetMouseButtonUp(1)) {
 			ani.SetTrigger("StopHonk");
+			if (honkEmitter.Emit)
+			honkEmitter.StopEmit();
 		}
 
 		bool isBiting = ani.GetCurrentAnimatorStateInfo(1).IsName("Bite");

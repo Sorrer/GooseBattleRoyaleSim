@@ -72,6 +72,8 @@
     <Compile Include="Assets\Scripts\GameMap\GameMapManager.cs" />
     <Compile Include="Assets\Scripts\GlobalGame.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseEntity.cs" />
+    <Compile Include="Assets\Scripts\NPCs\Goose\GooseHonkSphere.cs" />
+    <Compile Include="Assets\Scripts\NPCs\Goose\GooseHonkSphereEmitter.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseRagdoll.cs" />
     <Compile Include="Assets\Scripts\Player\ControlPlayer.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMain.cs" />
