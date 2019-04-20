@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 34797d5e7e0a7fb48a53476c42997d1d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Cube
+    100004: Plane
+    100006: //RootNode
+    100008: TreeBranch1
+    100010: TreeBranch2
+    100012: TreeBranch3
+    100014: TreeLeafBlobDiMiniLarge
+    100016: TreeLeafBlobLarge1
+    100018: TreeLeafBlobMedium1
+    100020: TreeLeafBlobSmall1
+    100022: TreeLeafBlobTriMiniOneMid
+    100024: TreeTrunk1
+    100026: TreeTrunk2
+    400000: Camera
+    400002: Cube
+    400004: Plane
+    400006: //RootNode
+    400008: TreeBranch1
+    400010: TreeBranch2
+    400012: TreeBranch3
+    400014: TreeLeafBlobDiMiniLarge
+    400016: TreeLeafBlobLarge1
+    400018: TreeLeafBlobMedium1
+    400020: TreeLeafBlobSmall1
+    400022: TreeLeafBlobTriMiniOneMid
+    400024: TreeTrunk1
+    400026: TreeTrunk2
+    2000000: Camera
+    2100000: CliffGrass
+    2100002: CliffStone
+    2100004: Terrain
+    2100006: terrainMountain
+    2100008: TerrainMountainSnow
+    2100010: No Name
+    2300000: Cube
+    2300002: Plane
+    2300004: TreeBranch1
+    2300006: TreeBranch2
+    2300008: TreeBranch3
+    2300010: TreeLeafBlobDiMiniLarge
+    2300012: TreeLeafBlobLarge1
+    2300014: TreeLeafBlobMedium1
+    2300016: TreeLeafBlobSmall1
+    2300018: TreeLeafBlobTriMiniOneMid
+    2300020: TreeTrunk1
+    2300022: TreeTrunk2
+    3300000: Cube
+    3300002: Plane
+    3300004: TreeBranch1
+    3300006: TreeBranch2
+    3300008: TreeBranch3
+    3300010: TreeLeafBlobDiMiniLarge
+    3300012: TreeLeafBlobLarge1
+    3300014: TreeLeafBlobMedium1
+    3300016: TreeLeafBlobSmall1
+    3300018: TreeLeafBlobTriMiniOneMid
+    3300020: TreeTrunk1
+    3300022: TreeTrunk2
+    4300000: Cube
+    4300002: Plane
+    4300004: TreeTrunk2
+    4300006: TreeBranch3
+    4300008: TreeBranch2
+    4300010: TreeBranch1
+    4300012: TreeTrunk1
+    4300014: TreeLeafBlobDiMiniLarge
+    4300016: TreeLeafBlobTriMiniOneMid
+    4300018: TreeLeafBlobSmall1
+    4300020: TreeLeafBlobMedium1
+    4300022: TreeLeafBlobLarge1
+    7400000: TreeTrunk2|Camera|Take 001|Layer 001
+    7400002: TreeTrunk2|Directional Light|Take 001|Layer 001
+    7400004: TreeTrunk2|Tree_lp_11|Take 001|Layer 001
+    7400006: TreeTrunk2|Tree_lp_11|Take 001|Layer 001.003
+    7400008: TreeTrunk2|Tree_lp_11|Take 001|Layer 001.004
+    7400010: TreeBranch3|Camera|Take 001|Layer 001
+    7400012: TreeBranch3|Directional Light|Take 001|Layer 001
+    7400014: TreeBranch3|Tree_lp_11|Take 001|Layer 001
+    7400016: TreeBranch3|Tree_lp_11|Take 001|Layer 001.003
+    7400018: TreeBranch3|Tree_lp_11|Take 001|Layer 001.004
+    7400020: TreeBranch2|Camera|Take 001|Layer 001
+    7400022: TreeBranch2|Directional Light|Take 001|Layer 001
+    7400024: TreeBranch2|Tree_lp_11|Take 001|Layer 001
+    7400026: TreeBranch2|Tree_lp_11|Take 001|Layer 001.003
+    7400028: TreeBranch2|Tree_lp_11|Take 001|Layer 001.004
+    7400030: TreeBranch1|Camera|Take 001|Layer 001
+    7400032: TreeBranch1|Directional Light|Take 001|Layer 001
+    7400034: TreeBranch1|Tree_lp_11|Take 001|Layer 001
+    7400036: TreeBranch1|Tree_lp_11|Take 001|Layer 001.003
+    7400038: TreeBranch1|Tree_lp_11|Take 001|Layer 001.004
+    7400040: TreeTrunk1|Camera|Take 001|Layer 001
+    7400042: TreeTrunk1|Directional Light|Take 001|Layer 001
+    7400044: TreeTrunk1|Tree_lp_11|Take 001|Layer 001
+    7400046: TreeTrunk1|Tree_lp_11|Take 001|Layer 001.003
+    7400048: TreeTrunk1|Tree_lp_11|Take 001|Layer 001.004
+    7400050: TreeLeafBlobDiMiniLarge|Camera|Take 001|Layer 001
+    7400052: TreeLeafBlobDiMiniLarge|Directional Light|Take 001|Layer 001
+    7400054: TreeLeafBlobDiMiniLarge|Tree_lp_11|Take 001|Layer 001
+    7400056: TreeLeafBlobDiMiniLarge|Tree_lp_11|Take 001|Layer 001.003
+    7400058: TreeLeafBlobDiMiniLarge|Tree_lp_11|Take 001|Layer 001.004
+    7400060: TreeLeafBlobTriMiniOneMid|Camera|Take 001|Layer 001
+    7400062: TreeLeafBlobTriMiniOneMid|Directional Light|Take 001|Layer 001
+    7400064: TreeLeafBlobTriMiniOneMid|Tree_lp_11|Take 001|Layer 001
+    7400066: TreeLeafBlobTriMiniOneMid|Tree_lp_11|Take 001|Layer 001.003
+    7400068: TreeLeafBlobTriMiniOneMid|Tree_lp_11|Take 001|Layer 001.004
+    7400070: TreeLeafBlobSmall1|Camera|Take 001|Layer 001
+    7400072: TreeLeafBlobSmall1|Directional Light|Take 001|Layer 001
+    7400074: TreeLeafBlobSmall1|Tree_lp_11|Take 001|Layer 001
+    7400076: TreeLeafBlobSmall1|Tree_lp_11|Take 001|Layer 001.003
+    7400078: TreeLeafBlobSmall1|Tree_lp_11|Take 001|Layer 001.004
+    7400080: TreeLeafBlobMedium1|Camera|Take 001|Layer 001
+    7400082: TreeLeafBlobMedium1|Directional Light|Take 001|Layer 001
+    7400084: TreeLeafBlobMedium1|Tree_lp_11|Take 001|Layer 001
+    7400086: TreeLeafBlobMedium1|Tree_lp_11|Take 001|Layer 001.003
+    7400088: TreeLeafBlobMedium1|Tree_lp_11|Take 001|Layer 001.004
+    7400090: TreeLeafBlobLarge1|Camera|Take 001|Layer 001
+    7400092: TreeLeafBlobLarge1|Directional Light|Take 001|Layer 001
+    7400094: TreeLeafBlobLarge1|Tree_lp_11|Take 001|Layer 001
+    7400096: TreeLeafBlobLarge1|Tree_lp_11|Take 001|Layer 001.003
+    7400098: TreeLeafBlobLarge1|Tree_lp_11|Take 001|Layer 001.004
+    7400100: Camera|Camera|Take 001|Layer 001
+    7400102: Camera|Directional Light|Take 001|Layer 001
+    7400104: Camera|Tree_lp_11|Take 001|Layer 001
+    7400106: Camera|Tree_lp_11|Take 001|Layer 001.003
+    7400108: Camera|Tree_lp_11|Take 001|Layer 001.004
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
