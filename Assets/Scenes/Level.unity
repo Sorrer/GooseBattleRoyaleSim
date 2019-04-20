@@ -495,11 +495,6 @@ PrefabInstance:
       propertyPath: cameraMovement
       value: 
       objectReference: {fileID: 758738827}
-    - target: {fileID: 31733162938949309, guid: 128b849534c0bb042a256f2c0acc5a3f,
-        type: 3}
-      propertyPath: m_TagString
-      value: Goose
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128b849534c0bb042a256f2c0acc5a3f, type: 3}
 --- !u!1001 &2873014981724300667

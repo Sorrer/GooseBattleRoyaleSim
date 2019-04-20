@@ -101,6 +101,7 @@ MonoBehaviour:
   controlPlayer: {fileID: 4580316692659884205}
   ani: {fileID: 31733162929433967}
   biteTrigger: {fileID: 1989756245306611923}
+  honkEmitter: {fileID: 1884549670170779077}
 --- !u!114 &4580316692659884205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,11 +138,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4580316692659884200}
     m_Modifications:
-    - target: {fileID: 4602732588853132894, guid: bf692617a0c48b84fa54eadd1f7320c3,
-        type: 3}
-      propertyPath: m_Name
-      value: GooseRagdoll
-      objectReference: {fileID: 0}
     - target: {fileID: 4602732588853092990, guid: bf692617a0c48b84fa54eadd1f7320c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +192,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602732588853132894, guid: bf692617a0c48b84fa54eadd1f7320c3,
+        type: 3}
+      propertyPath: m_Name
+      value: GooseRagdoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602732588853132894, guid: bf692617a0c48b84fa54eadd1f7320c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Goose
       objectReference: {fileID: 0}
     - target: {fileID: 4602732588496452982, guid: bf692617a0c48b84fa54eadd1f7320c3,
         type: 3}
@@ -432,9 +438,7 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 9.386106e-10
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4064867563878089637, guid: bf692617a0c48b84fa54eadd1f7320c3, type: 3}
-    - {fileID: 1434847696664456674, guid: bf692617a0c48b84fa54eadd1f7320c3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf692617a0c48b84fa54eadd1f7320c3, type: 3}
 --- !u!4 &31733162939040413 stripped
 Transform:
@@ -458,5 +462,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4af1ea23fd40d0e42af753aa0c70e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1884549670170779077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2717867619892657446, guid: bf692617a0c48b84fa54eadd1f7320c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4580316693890801891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afad0d52b5160aa44a3e129bbef1aacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
