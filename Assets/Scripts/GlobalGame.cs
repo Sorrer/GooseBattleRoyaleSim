@@ -8,6 +8,7 @@ public class GlobalGame : MonoBehaviour
 	public static bool Paused = false;
 	public static bool EnableEdgeScroll = false;
 	public static PlayerMain Player;
+	public static GameMapManager MapManager;
 
 	void Start()
     {
