@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D0D5D67C-3713-9811-31F4-6D052272B0ED}</ProjectGuid>
+    <ProjectGuid>{AF9E0027-A1B9-87D1-2814-053CC0F79905}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -138,25 +138,25 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>A:/Development/UnityEditors/2018.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -360,13 +360,13 @@
       <HintPath>A:/Development/UnityEditors/2018.3.13f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>A:/Development/UnityProjects/Goose Battle Royale Simulator/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>A:/Development/UnityProjects/GooseBattleRoyaleSimREPO/GooseBattleRoyaleSim/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>A:/Development/UnityEditors/2018.3.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -716,11 +716,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{728122D9-7F78-6617-703F-5AEEE7621650}</Project>
+      <Project>{330C4E3F-24AC-BFB7-E49C-ECFC321DCF27}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{68C08E0D-8DC8-5DEB-280E-32E3C4704BD9}</Project>
+      <Project>{DCF0F7C5-8491-3846-2667-29EE8D77F71B}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>

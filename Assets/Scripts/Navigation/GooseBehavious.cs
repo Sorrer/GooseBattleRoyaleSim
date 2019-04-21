@@ -80,8 +80,10 @@ public class GooseBehavious : MonoBehaviour
     {
         if (gooseInRange.Count > 0 && !focused)
         {
-            bool isSelDead = false;
+
             DamageSystem curSystem = null;
+
+		
             do
             {
                 int randIndex = Random.Range(0, gooseInRange.Count);
@@ -95,8 +97,8 @@ public class GooseBehavious : MonoBehaviour
                     ConsoleLogger.debug("AI", focusedObject.name);
                     curSystem = focusedObject.GetComponent<GooseEntity>().damageSystem;
                 }
-                
-            } while (curSystem.IsDead);
+
+			} while (curSystem.IsDead);
             navEle.thisAgent.SetDestination(focusedObject.transform.position);
             //Debug.Log(gooseInRange[randIndex].transform.position);
         }
