@@ -148,12 +148,21 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Very High
+<<<<<<< HEAD
     pixelLightCount: 8
     shadows: 2
     shadowResolution: 2
     shadowProjection: 1
     shadowCascades: 4
     shadowDistance: 1000
+=======
+    pixelLightCount: 6
+    shadows: 2
+    shadowResolution: 2
+    shadowProjection: 1
+    shadowCascades: 2
+    shadowDistance: 400
+>>>>>>> 957e6bd7bf681720cee32d9f07e9859965e86aac
     shadowNearPlaneOffset: 3
     shadowCascade2Split: 0.33333334
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
@@ -188,7 +197,11 @@ QualitySettings:
     shadowResolution: 2
     shadowProjection: 1
     shadowCascades: 4
+<<<<<<< HEAD
     shadowDistance: 1000
+=======
+    shadowDistance: 400
+>>>>>>> 957e6bd7bf681720cee32d9f07e9859965e86aac
     shadowNearPlaneOffset: 3
     shadowCascade2Split: 0.33333334
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}

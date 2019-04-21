@@ -7,6 +7,14 @@ public class PlayerMain : MonoBehaviour
 	
 
 	public ControlPlayer controlPlayer;
+<<<<<<< HEAD
+	public Animator ani;
+
+    public DamageSystem damageSystem;
+    public DamageTrigger biteTrigger;
+    public GooseHonkSphereEmitter honkEmitter;
+
+=======
 	public Animator ani;
 
 	public GooseRagdoll ragdoll;
@@ -14,6 +22,10 @@ public class PlayerMain : MonoBehaviour
 	public DamageTrigger biteTrigger;
 	public GooseHonkSphereEmitter honkEmitter;
 	Timer deathTimer;
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> 957e6bd7bf681720cee32d9f07e9859965e86aac
 
 	// Start is called before the first frame update
 	void Start()
