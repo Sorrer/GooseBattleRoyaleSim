@@ -17,7 +17,7 @@ public class DamageTrigger : MonoBehaviour
 
 	public void StartDamage(float amount) {
 
-		print("Enabling");
+
 
 		this.Amount = amount;
 		EnableDamage = true;
@@ -25,7 +25,6 @@ public class DamageTrigger : MonoBehaviour
 		foreach(DamageSystem system in currentlyDamaged) {
 			system.ApplyDamage(this.Amount);
 
-			print("Bit " + system.transform.name);
 		}
 	}	
 

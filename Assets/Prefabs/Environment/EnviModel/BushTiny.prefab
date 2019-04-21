@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7729333401089468082}
   - component: {fileID: 7087278630414517745}
   - component: {fileID: 6681021218378707244}
+  - component: {fileID: 5805923214938775079}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (6)
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5805923214938775079
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508064448536894715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &4235135685293752132
 GameObject:
   m_ObjectHideFlags: 0

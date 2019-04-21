@@ -10,6 +10,9 @@ public class GlobalGame : MonoBehaviour
 	public static PlayerMain Player;
 	public static GameMapManager MapManager;
 
+	public static bool ForceDrop = false;
+	
+
 	void Start()
     {
         

@@ -21,15 +21,15 @@ public class GooseHonkSphere : MonoBehaviour
 		this.lifeTime = lifeTime;
 		this.momentum = momentum;
 		this.system = parentSystem;
-
 		GetComponent<Rigidbody>().AddForce(momentum);
 		lifeTimer = new Timer(lifeTime);
 		lifeTimer.Start();
 	}
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+
+		this.transform.localScale = transform.localScale + new Vector3(0.05f, 0, 0.05f);
 		if (lifeTimer.IsDone()) {
 			Destroy(this.gameObject);
 		}   

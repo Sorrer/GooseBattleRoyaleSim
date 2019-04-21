@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 826007328342118815}
   - component: {fileID: 208614339741020472}
   - component: {fileID: 4653286327416751526}
+  - component: {fileID: 3832123968258937601}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (4)
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3832123968258937601
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454298815758486618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &483715975207214579
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +103,7 @@ GameObject:
   - component: {fileID: 1091038379319058707}
   - component: {fileID: 2967226825688936960}
   - component: {fileID: 2239916994502364075}
+  - component: {fileID: 8276755162194662296}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (8)
   m_TagString: Untagged
@@ -154,6 +170,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8276755162194662296
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483715975207214579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &1045580422019887867
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +195,7 @@ GameObject:
   - component: {fileID: 7530891095931605166}
   - component: {fileID: 4327974522649181814}
   - component: {fileID: 2544211515434978435}
+  - component: {fileID: 7901726574592842075}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (7)
   m_TagString: Untagged
@@ -231,6 +262,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7901726574592842075
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045580422019887867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &1407232265695519655
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4943063191562519883}
+  - component: {fileID: 7288432227028071472}
   m_Layer: 0
   m_Name: MiniLeafBlobs
   m_TagString: Untagged
@@ -263,6 +309,20 @@ Transform:
   m_Father: {fileID: 5546958760329988583}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7288432227028071472
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407232265695519655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &2033497049455498564
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4183451866699648796}
+  - component: {fileID: 5227999062179170958}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -297,6 +358,20 @@ Transform:
   m_Father: {fileID: 4943063191562519883}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5227999062179170958
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033497049455498564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &3011618274946374366
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +383,7 @@ GameObject:
   - component: {fileID: 7620569671212065695}
   - component: {fileID: 8960735090031152745}
   - component: {fileID: 8905686271840483212}
+  - component: {fileID: 9085392138572005893}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (2)
   m_TagString: Untagged
@@ -374,6 +450,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &9085392138572005893
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011618274946374366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &3150776205328069192
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7713804298330926804}
+  - component: {fileID: 5194182066136877794}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -408,6 +499,20 @@ Transform:
   m_Father: {fileID: 4943063191562519883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5194182066136877794
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150776205328069192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &5019422367333429505
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +556,7 @@ GameObject:
   - component: {fileID: 6667832347382177752}
   - component: {fileID: 1571216926000984765}
   - component: {fileID: 2917316098853504321}
+  - component: {fileID: 7992836220358515382}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (5)
   m_TagString: Untagged
@@ -517,6 +623,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7992836220358515382
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5435055717195807743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &7076367062319351325
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +648,7 @@ GameObject:
   - component: {fileID: 6007421146564131790}
   - component: {fileID: 79150759751449634}
   - component: {fileID: 8104931518851699724}
+  - component: {fileID: 2674948076651793302}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (3)
   m_TagString: Untagged
@@ -594,6 +715,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2674948076651793302
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7076367062319351325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &7796211279059499195
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +740,7 @@ GameObject:
   - component: {fileID: 6996190696001367088}
   - component: {fileID: 142711727162198763}
   - component: {fileID: 1204185590532485664}
+  - component: {fileID: 6599551099961682619}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (6)
   m_TagString: Untagged
@@ -671,6 +807,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6599551099961682619
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796211279059499195}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &8144341579444733899
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +832,7 @@ GameObject:
   - component: {fileID: 6141374683334620416}
   - component: {fileID: 3846920913422125640}
   - component: {fileID: 6515035128139069206}
+  - component: {fileID: 1965937768219208810}
   m_Layer: 0
   m_Name: TreeLeafBlobLarge1 (2)
   m_TagString: Untagged
@@ -748,6 +899,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1965937768219208810
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144341579444733899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &8938533377250442502
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +924,7 @@ GameObject:
   - component: {fileID: 1229706939634111174}
   - component: {fileID: 6831054474815132936}
   - component: {fileID: 2588099977788886766}
+  - component: {fileID: 6167413045035358771}
   m_Layer: 0
   m_Name: TreeTrunk1 (1)
   m_TagString: Untagged
@@ -825,3 +991,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6167413045035358771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8938533377250442502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300012, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}

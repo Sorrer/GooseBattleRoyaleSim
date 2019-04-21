@@ -5,8 +5,8 @@ using UnityEngine;
 public enum ControlModes { Player, BaseBuilding}
 
 public class ControlPlayer : MonoBehaviour {
-
-	CharacterController playerController;
+	[HideInInspector]
+	public CharacterController playerController;
 	public float speed = 11f;
 
 	public Transform CameraPos;

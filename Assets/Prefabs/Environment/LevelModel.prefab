@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1787442510437136907}
   - component: {fileID: 1787442510440561193}
   - component: {fileID: 1787442510439430377}
+  - component: {fileID: 2853903670961229566}
   m_Layer: 0
   m_Name: Cliff (5)
   m_TagString: Untagged
@@ -78,6 +79,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2853903670961229566
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787442510437426731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &5358169150362799989
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +230,7 @@ GameObject:
   - component: {fileID: 5358169150424047061}
   - component: {fileID: 5358169150424047058}
   - component: {fileID: 5358169150424047059}
+  - component: {fileID: 2143596141835255810}
   m_Layer: 0
   m_Name: Cliff (2)
   m_TagString: Untagged
@@ -282,6 +298,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2143596141835255810
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358169150424047056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &5358169150596877935
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +377,7 @@ GameObject:
   - component: {fileID: 5358169151049438147}
   - component: {fileID: 5358169151049438144}
   - component: {fileID: 5358169151049438145}
+  - component: {fileID: 8743605261940122768}
   m_Layer: 0
   m_Name: Cliff (4)
   m_TagString: Untagged
@@ -414,6 +445,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8743605261940122768
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358169151049438158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &5358169151121790395
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +470,7 @@ GameObject:
   - component: {fileID: 5358169151121790396}
   - component: {fileID: 5358169151121790397}
   - component: {fileID: 5358169151121790394}
+  - component: {fileID: 2326566959881904441}
   m_Layer: 0
   m_Name: Cliff (1)
   m_TagString: Untagged
@@ -492,6 +538,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2326566959881904441
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358169151121790395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &5358169151661030767
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +676,7 @@ GameObject:
   - component: {fileID: 5358169151873527672}
   - component: {fileID: 5358169151873527673}
   - component: {fileID: 5358169151873527654}
+  - component: {fileID: 169859836633394628}
   m_Layer: 0
   m_Name: Cliff (3)
   m_TagString: Untagged
@@ -683,6 +744,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &169859836633394628
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358169151873527655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1001 &669248658143956768
 PrefabInstance:
   m_ObjectHideFlags: 0

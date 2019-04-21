@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\GlobalGame.cs" />
     <Compile Include="Assets\Scripts\Navigation\GooseBehavious.cs" />
     <Compile Include="Assets\Scripts\Navigation\SimpleNavigation.cs" />
+    <Compile Include="Assets\Scripts\NPCs\Bus\BusMove.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseEntity.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseHonkSphere.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseHonkSphereEmitter.cs" />

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4108892561378796231}
   - component: {fileID: 7917666151030958154}
   - component: {fileID: 4180686409645861374}
+  - component: {fileID: 4975321309026463725}
   m_Layer: 0
   m_Name: TreeTrunk1 (2)
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4975321309026463725
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812200428318529901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300012, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &5233364670868636630
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +103,7 @@ GameObject:
   - component: {fileID: 6335948137697766681}
   - component: {fileID: 4828776429602771921}
   - component: {fileID: 1436320683345992780}
+  - component: {fileID: 3748995049177331654}
   m_Layer: 0
   m_Name: TreeLeafBlobDiMiniLarge (1)
   m_TagString: Untagged
@@ -154,6 +170,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3748995049177331654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5233364670868636630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300014, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}
 --- !u!1 &5730159832892435709
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +228,7 @@ GameObject:
   - component: {fileID: 2371021856649459645}
   - component: {fileID: 1017391151526327145}
   - component: {fileID: 3809966895379811149}
+  - component: {fileID: 4637161503709156720}
   m_Layer: 0
   m_Name: TreeLeafBlobTriMiniOneMid (1)
   m_TagString: Untagged
@@ -264,3 +295,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4637161503709156720
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7722740383546632153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300016, guid: 34797d5e7e0a7fb48a53476c42997d1d, type: 3}

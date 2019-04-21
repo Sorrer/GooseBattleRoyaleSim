@@ -48,6 +48,7 @@ public class GooseHonkSphereEmitter : MonoBehaviour
 
 				GameObject honkSphere = Instantiate(honkSpherePrefab);
 				honkSphere.transform.position = this.transform.position;
+				honkSphere.transform.rotation = Quaternion.LookRotation(transform.right);
 				GooseHonkSphere honkScript = honkSphere.GetComponent<GooseHonkSphere>();
 
 				honkScript.startSphere(SphereDamage, SphereLifetime, transform.forward * EmitSpeed, parentSystem);

@@ -17,8 +17,10 @@ public class SimpleNavigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FaceTarget(thisAgent.destination);
-        thisAgent.SetDestination(thisAgent.destination);
+		if(thisAgent.destination != transform.position) {
+		  FaceTarget(thisAgent.destination);
+		  thisAgent.SetDestination(thisAgent.destination);
+		}
     }
 
     private void FaceTarget(Vector3 destination)
