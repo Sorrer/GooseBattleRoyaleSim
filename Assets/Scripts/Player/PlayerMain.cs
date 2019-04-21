@@ -9,9 +9,11 @@ public class PlayerMain : MonoBehaviour
 	public ControlPlayer controlPlayer;
 	public Animator ani;
 
+	public GooseRagdoll ragdoll;
+	public DamageSystem damageSystem;
 	public DamageTrigger biteTrigger;
 	public GooseHonkSphereEmitter honkEmitter;
-
+	Timer deathTimer;
 
 	// Start is called before the first frame update
 	void Start()
@@ -27,7 +29,20 @@ public class PlayerMain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		
+
+		if (damageSystem.IsDead) {
+			if(deathTimer == null) {
+				ragdoll.EnableRagdoll = true;
+				deathTimer = new Timer(5);
+				deathTimer.Start();
+			} else if(deathTimer.IsDone()){
+				deathTimer = null;
+				ragdoll.EnableRagdoll = false;
+				damageSystem.HP = 101;
+				damageSystem.IsDead = false;
+			}
+		}
+
 		if (!foundAllBaseComponents) {
 			setBaseComponents();
 		}
