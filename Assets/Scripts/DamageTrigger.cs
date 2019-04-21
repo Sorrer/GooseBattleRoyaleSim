@@ -43,7 +43,7 @@ public class DamageTrigger : MonoBehaviour
 
 
 			if (EnableDamage) {
-				print("Bit " + other.transform.name);
+				//print("Bit " + other.transform.name);
 				system.ApplyDamage(this.Amount);
 			}
 		}

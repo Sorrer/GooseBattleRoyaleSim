@@ -85,7 +85,7 @@ public class GooseRagdoll : MonoBehaviour
 				body.velocity = new Vector3(0f, 0f, 0f);
 				body.angularVelocity = new Vector3(0f, 0f, 0f);
 
-				print(child);
+				//print(child);
 			}
 
 		}
