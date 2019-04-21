@@ -17,7 +17,15 @@ public class SimpleNavigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FaceTarget(thisAgent.destination);
         thisAgent.SetDestination(thisAgent.destination);
-        
+    }
+
+    private void FaceTarget(Vector3 destination)
+    {
+        Vector3 lookPos = destination - transform.position;
+        lookPos.y = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 20);
     }
 }

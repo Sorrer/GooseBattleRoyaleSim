@@ -9,8 +9,9 @@ public class PlayerMain : MonoBehaviour
 	public ControlPlayer controlPlayer;
 	public Animator ani;
 
-	public DamageTrigger biteTrigger;
-	public GooseHonkSphereEmitter honkEmitter;
+    public DamageSystem damageSystem;
+    public DamageTrigger biteTrigger;
+    public GooseHonkSphereEmitter honkEmitter;
 
 
 	// Start is called before the first frame update
