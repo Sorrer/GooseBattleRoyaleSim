@@ -26,40 +26,46 @@ public class GooseBehavious : MonoBehaviour
 
     private bool focused = false;
     private GameObject focusedObject = null;
+
+    private bool currentEnemyLState = false;
+
     // Start is called before the first frame update
     void Start()
-    { }
+    {
+        focusedObject = gameObject;
+    }
 
     // Update is called once per frame
     void Update()
     {
+
         if (gooseAdded)
         {
-            SetAttackGoose();
+            if (!focused)
+            {
+                //Debug.Log("Finding new Goose");
+                SetAttackGoose();
+            }
+            gooseAdded = false;
         }
-
+        navEle.thisAgent.SetDestination(focusedObject.transform.position);
         Die();
 
         float dist = Mathf.Abs((navEle.thisAgent.destination - transform.position).magnitude);
         walking = (dist >= navEle.thisAgent.stoppingDistance);
         attack = !walking;
-        Animations();
+        AnimationsAndActions();
     }
-
+    
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Goose"))
         {
-            Debug.Log("Found a goose");
             if (collision.gameObject != thisChild)
             {
-                Debug.Log("Found a goose");
+                //Debug.Log("Found a goose");
                 gooseInRange.Add(collision.gameObject);
                 gooseAdded = true;
-            }
-            else
-            {
-                Debug.Log(collision.gameObject.name);
             }
         }
     }
@@ -73,6 +79,10 @@ public class GooseBehavious : MonoBehaviour
             {
                 focused = false;
             }
+            if(gooseInRange.Count <= 0)
+            {
+                gooseAdded = false;
+            }
         }
     }
 
@@ -80,31 +90,44 @@ public class GooseBehavious : MonoBehaviour
     {
         if (gooseInRange.Count > 0 && !focused)
         {
-
-            DamageSystem curSystem = null;
-
-		
-            do
-            {
-                int randIndex = Random.Range(0, gooseInRange.Count);
-                focusedObject = gooseInRange[randIndex];
-                if (focusedObject.CompareTag("Player"))
-                {
-                    curSystem = focusedObject.GetComponent<PlayerMain>().damageSystem;
-                }
-                else if(focusedObject.CompareTag("Goose"))
-                {
-                    ConsoleLogger.debug("AI", focusedObject.name);
-                    curSystem = focusedObject.GetComponent<GooseEntity>().damageSystem;
-                }
-
-			} while (curSystem.IsDead);
-            navEle.thisAgent.SetDestination(focusedObject.transform.position);
+            GetEnemyPos();
+            //Debug.Log("Did this");
             //Debug.Log(gooseInRange[randIndex].transform.position);
         }
     }
 
-    private void Animations()
+    private void GetEnemyPos()
+    {
+        DamageSystem curSystem = null;
+        bool foundAlive = false;
+        while (!foundAlive)
+        {
+            int randIndex = Random.Range(0, gooseInRange.Count);
+            focusedObject = gooseInRange[randIndex];
+            if(focusedObject != null)
+            {
+                if (focusedObject.CompareTag("Player"))
+                {
+                    curSystem = focusedObject.GetComponent<PlayerMain>().damageSystem;
+                }
+                else if (focusedObject.CompareTag("Goose"))
+                {
+                    curSystem = focusedObject.GetComponent<GooseEntity>().damageSystem;
+                }
+
+                if (!curSystem.IsDead)
+                {
+                    //Debug.Log(focusedObject.name);
+                    foundAlive = true;
+                }
+            }
+
+        }
+        focused = true;
+    }
+    
+
+    private void AnimationsAndActions()
     {
         WalkAnim();
         Attack();
@@ -127,11 +150,12 @@ public class GooseBehavious : MonoBehaviour
     //        flappedWings = false;
     //    }
     //}
+
     bool finishedBiting = true;
     private void Attack()
     {
         bool honk = false;
-                bool isBiing = ani.GetCurrentAnimatorStateInfo(1).IsName("Bite");
+        bool isBiing = ani.GetCurrentAnimatorStateInfo(1).IsName("Bite");
         if(currentTime < Time.time && !isBiing && finishedBiting)
         {
             int randHonkChance = Random.Range(1, 12);
