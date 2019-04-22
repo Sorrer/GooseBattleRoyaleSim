@@ -47,7 +47,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8
+  m_Radius: 3
   m_Center: {x: 0, y: 0.5, z: 0.19}
 --- !u!195 &2873014980332272300
 NavMeshAgent:
@@ -59,7 +59,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -1372625422
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -100,10 +100,11 @@ MonoBehaviour:
   navEle: {fileID: 2873014980332272301}
   sC: {fileID: 8352078171359340820}
   thisChild: {fileID: 1747061306358443027}
+  player: {fileID: 0}
   attackingEnemy: {fileID: 0}
   attackerEnemy: {fileID: 0}
   beingAttacked: 0
-  attacking: 1
+  attacking: 0
   attackingIsMiddle: 0
   gooseInRange: []
   ani: {fileID: 1747061306365730753}
@@ -111,9 +112,9 @@ MonoBehaviour:
   damageSystem: {fileID: 2974475964583299522}
   biteTrigger: {fileID: 275699138947836541}
   honkEmitter: {fileID: 173724847281254251}
+  walking: 0
   focusedObject: {fileID: 0}
   enemyGB: {fileID: 0}
-  centerOfRing: {fileID: 0}
 --- !u!54 &2390498410655321401
 Rigidbody:
   m_ObjectHideFlags: 0

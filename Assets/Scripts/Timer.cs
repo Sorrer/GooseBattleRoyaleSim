@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Timer
 {
-	private float countTo = 0;
+	public float countTo = 0;
 	private bool done = true;
 	private float cur = 0;
 	private bool paused = false;
@@ -21,6 +21,10 @@ public class Timer
 		this.Started = true;
 		this.done = false;
 		this.cur = Time.realtimeSinceStartup;
+	}
+	public void Start(float secs) {
+		this.countTo = secs;
+		Start();
 	}
 
 	public void Stop() {

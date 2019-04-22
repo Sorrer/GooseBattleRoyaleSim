@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Camera\CameraCircleShaderManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraScreenShadingEffect.cs" />
+    <Compile Include="Assets\Scripts\CircleManager.cs" />
     <Compile Include="Assets\Scripts\ConsoleLogger.cs" />
     <Compile Include="Assets\Scripts\DamageSystem.cs" />
     <Compile Include="Assets\Scripts\GameConfig.cs" />
@@ -74,8 +75,6 @@
     <Compile Include="Assets\Scripts\GameStats.cs" />
     <Compile Include="Assets\Scripts\GlobalGame.cs" />
     <Compile Include="Assets\Scripts\GooseSpawn.cs" />
-    <Compile Include="Assets\Scripts\Misc\KillCount.cs" />
-    <Compile Include="Assets\Scripts\Misc\ThankBusDriver.cs" />
     <Compile Include="Assets\Scripts\Navigation\GooseBehavious.cs" />
     <Compile Include="Assets\Scripts\Navigation\SimpleNavigation.cs" />
     <Compile Include="Assets\Scripts\NPCs\Bus\BusMove.cs" />
@@ -87,9 +86,11 @@
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseRagdoll.cs" />
     <Compile Include="Assets\Scripts\Player\ControlPlayer.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMain.cs" />
-    <Compile Include="Assets\Scripts\SummonTheGeese.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\UI\EventText.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\KillCount.cs" />
+    <Compile Include="Assets\Scripts\UI\ThankBusDriver.cs" />
     <Compile Include="Assets\Sounds\Scripts\HonkSoundEmitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

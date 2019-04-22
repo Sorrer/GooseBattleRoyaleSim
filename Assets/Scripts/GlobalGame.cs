@@ -17,11 +17,12 @@ public class GlobalGame : MonoBehaviour
 
 	public static GlobalGame _instance;
 
-
+	public static float CircleDamage = 5;
+	public static float CircleDamageTick = 1;
 
 	public Transform centerPos;
 	public float radiPos;
-
+	public static EventText eventText;
 
 	void Start()
     {
