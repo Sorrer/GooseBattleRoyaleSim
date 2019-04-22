@@ -10,9 +10,9 @@ public class BusMove : MonoBehaviour
 
     void FixedUpdate()
     {
-		this.transform.position = Vector3.MoveTowards(this.transform.position, EndPoint.transform.position, 10 * Time.fixedDeltaTime);
+		this.transform.position = Vector3.MoveTowards(this.transform.position, EndPoint.transform.position, 6 * Time.fixedDeltaTime);
 
-		if(Vector3.Distance(this.transform.position, EndPoint.position) <= 10 * Time.fixedDeltaTime + 1) {
+		if(Vector3.Distance(this.transform.position, EndPoint.position) <= 6 * Time.fixedDeltaTime + 1) {
 			GlobalGame.ForceDrop = true;
 
 			Destroy(this);

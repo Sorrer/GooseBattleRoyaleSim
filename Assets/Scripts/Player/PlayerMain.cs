@@ -20,7 +20,8 @@ public class PlayerMain : MonoBehaviour
 	Timer deathTimer,fallinTimer;
 
 	public bool Droppin = false;
-	private bool falling = false;
+	[HideInInspector]
+	public bool falling = false;
 	// Start is called before the first frame update
 	void Start()
     {

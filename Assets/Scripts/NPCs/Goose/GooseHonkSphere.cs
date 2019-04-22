@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GooseHonkSphere : MonoBehaviour
 {
-
+	public bool FromParent = false;
 	float damage, lifeTime;
 	Vector3 momentum;
 	Timer lifeTimer;
@@ -41,8 +41,16 @@ public class GooseHonkSphere : MonoBehaviour
 		if (damageSafety) return;
 		DamageSystem system = other.GetComponent<DamageSystem>();
 		if (system == null || system == this.system) return;
-		
+
+		bool Deaded = system.IsDead;
+
 		system.ApplyDamage(damage);
+
+		if (system.IsDead != Deaded && FromParent) {
+			GameStats.Kills++;
+		}
+
+
 		damageSafety = true;
 		Destroy(this.gameObject);
 	}

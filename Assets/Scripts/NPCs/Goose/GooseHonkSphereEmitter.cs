@@ -7,6 +7,7 @@ public class GooseHonkSphereEmitter : MonoBehaviour
 
 
 	public bool Emit = false;
+	public bool FromParent = false;
 
 	public GameObject honkSpherePrefab;
 
@@ -17,6 +18,11 @@ public class GooseHonkSphereEmitter : MonoBehaviour
 
 	public DamageSystem parentSystem;
 
+
+	public bool EmitSound = false;
+
+	public AudioSource sound;
+
 	Timer timer;
 
 	bool lastEmit = false;
@@ -26,12 +32,20 @@ public class GooseHonkSphereEmitter : MonoBehaviour
 		lastEmit = true;
 		timer = new Timer(SphereLifetime/EmitAmount);
 		timer.Start();
+
+		if (EmitSound) {
+			sound.Play();
+		}
 	}
 
 	public void StopEmit() {
 		Emit = false;
 		lastEmit = false;
 		timer.Stop();
+
+		if(sound != null) {
+			sound.Stop();
+		}
 	}
 
 	private void Update() {
@@ -50,7 +64,7 @@ public class GooseHonkSphereEmitter : MonoBehaviour
 				honkSphere.transform.position = this.transform.position;
 				honkSphere.transform.rotation = Quaternion.LookRotation(transform.right);
 				GooseHonkSphere honkScript = honkSphere.GetComponent<GooseHonkSphere>();
-
+				honkScript.FromParent = this.FromParent;
 				honkScript.startSphere(SphereDamage, SphereLifetime, transform.forward * EmitSpeed, parentSystem);
 
 
