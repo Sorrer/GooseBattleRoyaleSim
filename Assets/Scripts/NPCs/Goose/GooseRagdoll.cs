@@ -31,8 +31,8 @@ public class GooseRagdoll : MonoBehaviour
 		foreach(Transform child in loc) {
 			saveOriginal(child);
 
-			originalLocation.Add(child, child.localPosition);
-			originalRotation.Add(child, child.localRotation);
+			originalLocation.Add(child.name, child.localPosition);
+			originalRotation.Add(child.name, child.localRotation);
 		}
 	}
 
@@ -93,14 +93,16 @@ public class GooseRagdoll : MonoBehaviour
 
 	public void TurnOffRagdoll(Transform obj) {
 		ani.enabled = true;
+
 		foreach (Transform child in obj) {
 			TurnOffRagdoll(child);
 
+
 			Vector3 orgLoc;
 			Quaternion orgRot;
-
-			orgLoc = (Vector3)originalLocation[child];
-			orgRot = (Quaternion)originalRotation[child];
+			
+			orgLoc = (Vector3)originalLocation[child.name];
+			orgRot = (Quaternion)originalRotation[child.name];
 
 			if (orgLoc != null) child.localPosition = orgLoc;
 			if (orgRot != null) child.localRotation = orgRot;

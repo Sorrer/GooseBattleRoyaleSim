@@ -12,11 +12,23 @@ public class GlobalGame : MonoBehaviour
 	public static GameMapManager MapManager;
 
 	public static bool ForceDrop = false;
-	public static int CircleRadius = 50;
+	public static float CircleRadius = 50;
+	public static Vector3 CircleCenter = Vector3.zero;
+
+	public static GlobalGame _instance;
+
+
+
+	public Transform centerPos;
+	public float radiPos;
+
 
 	void Start()
     {
-        
+		GlobalGame._instance = this;
+		GlobalGame.CircleCenter = centerPos.position;
+		GlobalGame.CircleRadius = radiPos;
+
     }
 
     // Update is called once per frame
@@ -25,10 +37,10 @@ public class GlobalGame : MonoBehaviour
         
     }
 
-	public static bool WanderLoc(ref Vector3 pos) {
-		Vector3 center = new Vector3();
-		center.z = -32.2f;
+	public static bool RandomNavMeshPos(ref Vector3 pos) {
+		
 		Vector3 ranLoc = CircleRadius * Random.insideUnitSphere;
+		ranLoc += CircleCenter;
 
 		NavMeshHit navHit;
 		if(!NavMesh.SamplePosition(ranLoc, out navHit, CircleRadius, -1)) {

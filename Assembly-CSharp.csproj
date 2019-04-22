@@ -61,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AttachTransform.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraCircleShaderManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraScreenShadingEffect.cs" />
     <Compile Include="Assets\Scripts\ConsoleLogger.cs" />
     <Compile Include="Assets\Scripts\DamageSystem.cs" />
     <Compile Include="Assets\Scripts\GameConfig.cs" />
@@ -71,11 +73,13 @@
     <Compile Include="Assets\Scripts\GameMap\GameMapManager.cs" />
     <Compile Include="Assets\Scripts\GameStats.cs" />
     <Compile Include="Assets\Scripts\GlobalGame.cs" />
+    <Compile Include="Assets\Scripts\GooseSpawn.cs" />
     <Compile Include="Assets\Scripts\Misc\KillCount.cs" />
     <Compile Include="Assets\Scripts\Misc\ThankBusDriver.cs" />
     <Compile Include="Assets\Scripts\Navigation\GooseBehavious.cs" />
     <Compile Include="Assets\Scripts\Navigation\SimpleNavigation.cs" />
     <Compile Include="Assets\Scripts\NPCs\Bus\BusMove.cs" />
+    <Compile Include="Assets\Scripts\NPCs\DamageSystem1.cs" />
     <Compile Include="Assets\Scripts\NPCs\DamageTrigger.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseEntity.cs" />
     <Compile Include="Assets\Scripts\NPCs\Goose\GooseHonkSphere.cs" />
@@ -123,6 +127,7 @@
     <None Include="Assets\Materials\UnlitShadow.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Materials\ScreenOverlap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Font\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

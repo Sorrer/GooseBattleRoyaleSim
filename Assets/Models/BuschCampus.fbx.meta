@@ -1,0 +1,3080 @@
+fileFormatVersion: 2
+guid: 6be48b669b377674db98da5fb61f6132
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Building Allison Road Classroom Building
+    100002: Building Biomedical Engineering Building
+    100004: Building Busch Dining Hall
+    100006: Building Busch Student Center
+    100008: Building CBIM Modular Building
+    100010: Building Center For Advanced Infrastructure & Transportation
+    100012: Building Civil & Environmental Engineering Modular Bldg
+    100014: Building Civil Engineering Laboratory
+    100016: Building Computing Research & Education Building
+    100018: Building Computing Research & Education Building.001
+    100020: Building Computing Research & Education Building.002
+    100022: Building Computing Research & Education Building.003
+    100024: Building Computing Research & Education Building.004
+    100026: Building Computing Research & Education Building.005
+    100028: Building Computing Research & Education Building.006
+    100030: Building Computing Research & Education Building.007
+    100032: Building Computing Research & Education Building.008
+    100034: Building Doolittle Building Sanford T.
+    100036: Building Electrical Engineering Building
+    100038: Building Fiber Optic Materials Research Building
+    100040: Building Fiber Optic Materials Research Building.001
+    100042: Building Fiber Optic Materials Research Building.002
+    100044: Building Geological Sciences Lab Building
+    100046: Building Hill Center Bldg For The Mathematical Sciences
+    100048: Building Hill Center Bldg For The Mathematical Sciences.001
+    100050: Building Hill Center Bldg For The Mathematical Sciences.002
+    100052: Building Hill Center Bldg For The Mathematical Sciences.003
+    100054: Building Hill Center Bldg For The Mathematical Sciences.004
+    100056: Building Hill Center Bldg For The Mathematical Sciences.005
+    100058: Building Hill Center Bldg For The Mathematical Sciences.006
+    100060: Building Life Sciences Building
+    100062: Building Life Sciences Building.001
+    100064: Building Life Sciences Building.002
+    100066: Building Life Sciences Building.003
+    100068: Building Mccormick Residence Hall - Housing 1989 - Hi-Rise
+    100070: Building Mclaren Center For Ceramic Research
+    100072: Building Mclaren Center For Ceramic Research.001
+    100074: Building Mclaren Center For Ceramic Research.002
+    100076: Building Nanophysics Laboratory
+    100078: Building Nelson Biology Laboratories
+    100080: Building Paul Robeson Cultural Center
+    100082: Building Physics And Astronomy Building
+    100084: Building Physics And Astronomy Building.001
+    100086: Building Physics And Astronomy Building.002
+    100088: Building Physics Lecture Hall
+    100090: Building Psychology Building
+    100092: Building Richard Weeks Hall of Engineering
+    100094: Building School Of Engineering Building
+    100096: Building School Of Engineering Building.001
+    100098: Building Serin Physics Building
+    100100: Building Serin Physics Building.001
+    100102: Building Serin Physics Building.002
+    100104: Building Smithers Hall - Center Of Alcohol Studies
+    100106: Building Smithers Hall - Center Of Alcohol Studies.001
+    100108: Building Smithers Hall - Center Of Alcohol Studies.002
+    100110: Building Smithers Hall - Center Of Alcohol Studies.003
+    100112: Building Solvents Building - School Of Engineering
+    100114: Building T. Alexander Pond Science And Engineering Resource Cen
+    100116: Building T. Alexander Pond Science And Engineering Resource.000
+    100118: Building Wright Rieman Laboratories
+    100120: Building Wright Rieman Laboratories.001
+    100122: Building Wright Rieman Laboratories.002
+    100124: Building Wright Rieman Laboratories.003
+    100126: Building Wright Rieman Laboratories.004
+    100128: Building790
+    100130: Building797.002
+    100132: Building798
+    100134: Building799
+    100136: Building800
+    100138: Building801
+    100140: BuildingEntrance0
+    100142: BuildingEntrance120
+    100144: BuildingEntrance125
+    100146: BuildingEntrance126
+    100148: BuildingEntrance127
+    100150: BuildingEntrance129
+    100152: BuildingEntrance130
+    100154: BuildingEntrance131
+    100156: BuildingEntrance132
+    100158: BuildingEntrance135
+    100160: BuildingEntrance139
+    100162: BuildingEntrance142
+    100164: BuildingEntrance143
+    100166: BuildingEntrance144
+    100168: BuildingEntrance145
+    100170: BuildingEntrance152
+    100172: BuildingEntrance157
+    100174: BuildingEntrance160
+    100176: BuildingEntrance172
+    100178: BuildingEntrance175
+    100180: BuildingEntrance181
+    100182: BuildingEntrance193
+    100184: BuildingEntrance20
+    100186: BuildingEntrance200
+    100188: BuildingEntrance202
+    100190: BuildingEntrance206
+    100192: BuildingEntrance21
+    100194: BuildingEntrance23
+    100196: BuildingEntrance27
+    100198: BuildingEntrance61
+    100200: BuildingEntrance79
+    100202: BuildingEntrance80
+    100204: BuildingEntrance96
+    100206: BuildingEntrance97
+    100208: //RootNode
+    100210: BusStop Allison Road Classrooms
+    100212: BusStop201
+    100214: BusStop75
+    100216: Cube
+    100218: Cube.001
+    100220: Cube.002
+    100222: Cube.003
+    100224: Cube.004
+    100226: Cube.005
+    100228: Cube.006
+    100230: Plane
+    100232: Plane.001
+    100234: Road Allison Road
+    100236: Road Frelinghuysen Road
+    100238: Road211
+    100240: Road212
+    100242: Road213
+    100244: Road214
+    100246: Road215
+    100248: Road219
+    100250: Road220
+    100252: Road221
+    100254: Road222
+    100256: Road223
+    100258: Road228
+    100260: Road229
+    100262: Road230
+    100264: Road231
+    100266: Road232
+    100268: Road233
+    100270: Road234
+    100272: Road235
+    100274: Road236
+    100276: Road237
+    100278: Road238
+    100280: Road239
+    100282: Road240
+    100284: Road241
+    100286: Road242
+    100288: Road243
+    100290: Road244
+    100292: Road245
+    100294: Road246
+    100296: Road247
+    100298: Road248
+    100300: Road249
+    100302: Road250
+    100304: Road258
+    100306: Road259
+    100308: Road260
+    100310: Road261
+    100312: Road262
+    100314: Road266
+    100316: Road267
+    100318: Road268
+    100320: Road269
+    100322: Road270
+    100324: Road271
+    100326: Road272
+    100328: Road273
+    100330: Road274
+    100332: Road275
+    100334: Road276
+    100336: Road277
+    100338: Road278
+    100340: Road279
+    100342: Road280
+    100344: Road281
+    100346: Road282
+    100348: Road284
+    100350: Road286
+    100352: Road312
+    100354: Road313
+    100356: Road325
+    100358: Road326
+    100360: Road327
+    100362: Road328
+    100364: Road355
+    100366: Road360
+    100368: Road361
+    100370: Road362
+    100372: Road370
+    100374: Road371
+    100376: Road372
+    100378: Road373
+    100380: Road374
+    100382: Road375
+    100384: Road376
+    100386: Road377
+    100388: Road378
+    100390: Road391
+    100392: Road392
+    100394: Road393
+    100396: Road394
+    100398: Road395
+    100400: Road396
+    100402: Road397
+    100404: Road398
+    100406: Road399
+    100408: Road400
+    100410: Road401
+    100412: Road402
+    100414: Road403
+    100416: Road404
+    100418: Road405
+    100420: Road406
+    100422: Road407
+    100424: Road408
+    100426: Road409
+    100428: Road411
+    100430: Road412
+    100432: Road413
+    100434: Road424
+    100436: Road425
+    100438: Road426
+    100440: Road427
+    100442: Road428
+    100444: Road429
+    100446: Road430
+    100448: Road431
+    100450: Road436
+    100452: Road449
+    100454: Road450
+    100456: Road459
+    100458: Road460
+    100460: Road461
+    100462: Road462
+    100464: Road463
+    100466: Road464
+    100468: Road465
+    100470: Road466
+    100472: Road467
+    100474: Road468
+    100476: Road469
+    100478: Road470
+    100480: Road471
+    100482: Road472
+    100484: Road473
+    100486: Road474
+    100488: Road475
+    100490: Road476
+    100492: Road482
+    100494: Road483
+    100496: Road484
+    100498: Road485
+    100500: Road486
+    100502: Road487
+    100504: Road488
+    100506: Road489
+    100508: Road490
+    100510: Road491
+    100512: Road492
+    100514: Road493
+    100516: Road494
+    100518: Road495
+    100520: Road498
+    100522: Road499
+    100524: Road500
+    100526: Road503
+    100528: Road510
+    100530: Road511
+    100532: Road512
+    100534: Road513
+    100536: Road514
+    100538: Road515
+    100540: Road516
+    100542: Road517
+    100544: Road518
+    100546: Road519
+    100548: Road525
+    100550: Road527
+    100552: Road528
+    100554: Road531
+    100556: Road532
+    100558: Road533
+    100560: Road534
+    100562: Road535
+    100564: Road536
+    100566: Road537
+    100568: Road540
+    100570: Road541
+    100572: Road542
+    100574: Road543
+    100576: Road548
+    100578: Road560
+    100580: Road561
+    100582: Road562
+    100584: Road563
+    100586: Road564
+    100588: Road565
+    100590: Road566
+    100592: Road567
+    100594: Road568
+    100596: Road569
+    100598: Road570
+    100600: Road571
+    100602: Road572
+    100604: Road573
+    100606: Road574
+    100608: Road575
+    100610: Road578
+    100612: Road579
+    100614: Road580
+    100616: Road581
+    100618: Road582
+    100620: Road583
+    100622: Road584
+    100624: Road585
+    100626: Road586
+    100628: Road590
+    100630: Road591
+    100632: Road592
+    100634: Road593
+    100636: Road594
+    100638: Road595
+    100640: Road596
+    100642: Road597
+    100644: Road598
+    100646: Road599
+    100648: Road600
+    100650: Road601
+    100652: Road602
+    100654: Road603
+    100656: Road604
+    100658: Road605
+    100660: Road606
+    100662: Road607
+    100664: Road609
+    100666: Road610
+    100668: Road616
+    100670: Road617
+    100672: Road618
+    100674: Road619
+    100676: Road620
+    100678: Road621
+    100680: Road622
+    100682: Road629
+    100684: Road634
+    100686: Road635
+    100688: Road636
+    100690: Road637
+    100692: Road638
+    100694: Road639
+    100696: Road640
+    100698: Road641
+    100700: Road642
+    100702: Road643
+    100704: Road644
+    100706: Road645
+    100708: Road646
+    100710: Road647
+    100712: Road648
+    100714: Road649
+    100716: Road650
+    100718: Road655
+    100720: Road656
+    100722: Road663
+    100724: Road664
+    100726: Road665
+    100728: Road666
+    100730: Road667
+    100732: Road668
+    100734: Road669
+    100736: Road670
+    100738: Road681
+    100740: Road682
+    100742: Road683
+    100744: Road684
+    100746: Road685
+    100748: Road686
+    100750: Road687
+    100752: Road688
+    100754: Road689
+    100756: Road690
+    100758: Road691
+    100760: Road692
+    100762: Road693
+    100764: Road694
+    100766: Road695
+    100768: Road696
+    100770: Road697
+    100772: Road698
+    100774: Road699
+    100776: Road700
+    100778: Road701
+    100780: Road702
+    100782: Road703
+    100784: Road704
+    100786: Road705
+    100788: Road706
+    100790: Road709
+    100792: Road710
+    100794: Road711
+    100796: Road712
+    100798: Road713
+    100800: Road714
+    100802: Road715
+    100804: Road716
+    100806: Road717
+    100808: Road718
+    100810: Road719
+    100812: Road720
+    100814: Road721
+    100816: Road722
+    100818: Road723
+    100820: Road724
+    100822: Road725
+    100824: Road726
+    100826: Road727
+    100828: Road728
+    100830: Road729
+    100832: Road730
+    100834: Road731
+    100836: Road732
+    100838: Road733
+    100840: Road734
+    100842: Road735
+    100844: Road736
+    100846: Road737
+    100848: Road738
+    100850: Road739
+    100852: Road740
+    100854: Road741
+    100856: Road742
+    100858: Road743
+    100860: Road744
+    100862: Road745
+    100864: Road746
+    100866: Road747
+    100868: Road748
+    100870: Road749
+    100872: Road750
+    100874: Road751
+    100876: Road752
+    100878: Road753
+    100880: Road754
+    100882: Road755
+    100884: Road756
+    100886: Road757
+    100888: Road758
+    100890: Road759
+    100892: Road760
+    100894: Road761
+    100896: Road762
+    100898: Road763
+    100900: Road764
+    100902: Road765
+    100904: Road766
+    100906: Road767
+    100908: Road768
+    100910: Road769
+    100912: Road770
+    100914: Road771
+    100916: Road772
+    100918: Road773
+    100920: Road774
+    100922: Road775
+    100924: Road776
+    100926: Road777
+    100928: Road778
+    100930: Road779
+    100932: Road780
+    100934: Road781
+    100936: Road782
+    100938: Road783
+    100940: RoadConnector15
+    100942: RoadConnector179
+    100944: RoadConnector195
+    100946: RoadCrossingAtConnector140
+    100948: RoadJunction1
+    100950: RoadJunction100
+    100952: RoadJunction101
+    100954: RoadJunction104
+    100956: RoadJunction105
+    100958: RoadJunction106
+    100960: RoadJunction109
+    100962: RoadJunction11
+    100964: RoadJunction110
+    100966: RoadJunction113
+    100968: RoadJunction116
+    100970: RoadJunction117
+    100972: RoadJunction118
+    100974: RoadJunction119
+    100976: RoadJunction12
+    100978: RoadJunction122
+    100980: RoadJunction123
+    100982: RoadJunction124
+    100984: RoadJunction13
+    100986: RoadJunction133
+    100988: RoadJunction134
+    100990: RoadJunction136
+    100992: RoadJunction138
+    100994: RoadJunction14
+    100996: RoadJunction148
+    100998: RoadJunction150
+    101000: RoadJunction151
+    101002: RoadJunction156
+    101004: RoadJunction158
+    101006: RoadJunction159
+    101008: RoadJunction16
+    101010: RoadJunction161
+    101012: RoadJunction162
+    101014: RoadJunction164
+    101016: RoadJunction165
+    101018: RoadJunction166
+    101020: RoadJunction167
+    101022: RoadJunction17
+    101024: RoadJunction173
+    101026: RoadJunction174
+    101028: RoadJunction176
+    101030: RoadJunction178
+    101032: RoadJunction18
+    101034: RoadJunction184
+    101036: RoadJunction186
+    101038: RoadJunction187
+    101040: RoadJunction189
+    101042: RoadJunction19
+    101044: RoadJunction190
+    101046: RoadJunction192
+    101048: RoadJunction194
+    101050: RoadJunction196
+    101052: RoadJunction197
+    101054: RoadJunction204
+    101056: RoadJunction205
+    101058: RoadJunction22
+    101060: RoadJunction26
+    101062: RoadJunction28
+    101064: RoadJunction29
+    101066: RoadJunction30
+    101068: RoadJunction31
+    101070: RoadJunction32
+    101072: RoadJunction33
+    101074: RoadJunction34
+    101076: RoadJunction37
+    101078: RoadJunction39
+    101080: RoadJunction42
+    101082: RoadJunction43
+    101084: RoadJunction44
+    101086: RoadJunction45
+    101088: RoadJunction46
+    101090: RoadJunction47
+    101092: RoadJunction49
+    101094: RoadJunction51
+    101096: RoadJunction52
+    101098: RoadJunction53
+    101100: RoadJunction54
+    101102: RoadJunction55
+    101104: RoadJunction56
+    101106: RoadJunction58
+    101108: RoadJunction62
+    101110: RoadJunction63
+    101112: RoadJunction64
+    101114: RoadJunction65
+    101116: RoadJunction66
+    101118: RoadJunction67
+    101120: RoadJunction68
+    101122: RoadJunction70
+    101124: RoadJunction72
+    101126: RoadJunction73
+    101128: RoadJunction74
+    101130: RoadJunction76
+    101132: RoadJunction77
+    101134: RoadJunction78
+    101136: RoadJunction82
+    101138: RoadJunction83
+    101140: RoadJunction84
+    101142: RoadJunction86
+    101144: RoadJunction87
+    101146: RoadJunction88
+    101148: RoadJunction89
+    101150: RoadJunction9
+    101152: RoadJunction90
+    101154: RoadJunction91
+    101156: RoadJunction94
+    101158: RoadJunction95
+    101160: SurfaceParking Lot 49
+    101162: SurfaceParking Lot 53
+    101164: Wall329
+    101166: Wall330
+    101168: Wall331
+    101170: Wall332
+    400000: Building Allison Road Classroom Building
+    400002: Building Biomedical Engineering Building
+    400004: Building Busch Dining Hall
+    400006: Building Busch Student Center
+    400008: Building CBIM Modular Building
+    400010: Building Center For Advanced Infrastructure & Transportation
+    400012: Building Civil & Environmental Engineering Modular Bldg
+    400014: Building Civil Engineering Laboratory
+    400016: Building Computing Research & Education Building
+    400018: Building Computing Research & Education Building.001
+    400020: Building Computing Research & Education Building.002
+    400022: Building Computing Research & Education Building.003
+    400024: Building Computing Research & Education Building.004
+    400026: Building Computing Research & Education Building.005
+    400028: Building Computing Research & Education Building.006
+    400030: Building Computing Research & Education Building.007
+    400032: Building Computing Research & Education Building.008
+    400034: Building Doolittle Building Sanford T.
+    400036: Building Electrical Engineering Building
+    400038: Building Fiber Optic Materials Research Building
+    400040: Building Fiber Optic Materials Research Building.001
+    400042: Building Fiber Optic Materials Research Building.002
+    400044: Building Geological Sciences Lab Building
+    400046: Building Hill Center Bldg For The Mathematical Sciences
+    400048: Building Hill Center Bldg For The Mathematical Sciences.001
+    400050: Building Hill Center Bldg For The Mathematical Sciences.002
+    400052: Building Hill Center Bldg For The Mathematical Sciences.003
+    400054: Building Hill Center Bldg For The Mathematical Sciences.004
+    400056: Building Hill Center Bldg For The Mathematical Sciences.005
+    400058: Building Hill Center Bldg For The Mathematical Sciences.006
+    400060: Building Life Sciences Building
+    400062: Building Life Sciences Building.001
+    400064: Building Life Sciences Building.002
+    400066: Building Life Sciences Building.003
+    400068: Building Mccormick Residence Hall - Housing 1989 - Hi-Rise
+    400070: Building Mclaren Center For Ceramic Research
+    400072: Building Mclaren Center For Ceramic Research.001
+    400074: Building Mclaren Center For Ceramic Research.002
+    400076: Building Nanophysics Laboratory
+    400078: Building Nelson Biology Laboratories
+    400080: Building Paul Robeson Cultural Center
+    400082: Building Physics And Astronomy Building
+    400084: Building Physics And Astronomy Building.001
+    400086: Building Physics And Astronomy Building.002
+    400088: Building Physics Lecture Hall
+    400090: Building Psychology Building
+    400092: Building Richard Weeks Hall of Engineering
+    400094: Building School Of Engineering Building
+    400096: Building School Of Engineering Building.001
+    400098: Building Serin Physics Building
+    400100: Building Serin Physics Building.001
+    400102: Building Serin Physics Building.002
+    400104: Building Smithers Hall - Center Of Alcohol Studies
+    400106: Building Smithers Hall - Center Of Alcohol Studies.001
+    400108: Building Smithers Hall - Center Of Alcohol Studies.002
+    400110: Building Smithers Hall - Center Of Alcohol Studies.003
+    400112: Building Solvents Building - School Of Engineering
+    400114: Building T. Alexander Pond Science And Engineering Resource Cen
+    400116: Building T. Alexander Pond Science And Engineering Resource.000
+    400118: Building Wright Rieman Laboratories
+    400120: Building Wright Rieman Laboratories.001
+    400122: Building Wright Rieman Laboratories.002
+    400124: Building Wright Rieman Laboratories.003
+    400126: Building Wright Rieman Laboratories.004
+    400128: Building790
+    400130: Building797.002
+    400132: Building798
+    400134: Building799
+    400136: Building800
+    400138: Building801
+    400140: BuildingEntrance0
+    400142: BuildingEntrance120
+    400144: BuildingEntrance125
+    400146: BuildingEntrance126
+    400148: BuildingEntrance127
+    400150: BuildingEntrance129
+    400152: BuildingEntrance130
+    400154: BuildingEntrance131
+    400156: BuildingEntrance132
+    400158: BuildingEntrance135
+    400160: BuildingEntrance139
+    400162: BuildingEntrance142
+    400164: BuildingEntrance143
+    400166: BuildingEntrance144
+    400168: BuildingEntrance145
+    400170: BuildingEntrance152
+    400172: BuildingEntrance157
+    400174: BuildingEntrance160
+    400176: BuildingEntrance172
+    400178: BuildingEntrance175
+    400180: BuildingEntrance181
+    400182: BuildingEntrance193
+    400184: BuildingEntrance20
+    400186: BuildingEntrance200
+    400188: BuildingEntrance202
+    400190: BuildingEntrance206
+    400192: BuildingEntrance21
+    400194: BuildingEntrance23
+    400196: BuildingEntrance27
+    400198: BuildingEntrance61
+    400200: BuildingEntrance79
+    400202: BuildingEntrance80
+    400204: BuildingEntrance96
+    400206: BuildingEntrance97
+    400208: //RootNode
+    400210: BusStop Allison Road Classrooms
+    400212: BusStop201
+    400214: BusStop75
+    400216: Cube
+    400218: Cube.001
+    400220: Cube.002
+    400222: Cube.003
+    400224: Cube.004
+    400226: Cube.005
+    400228: Cube.006
+    400230: Plane
+    400232: Plane.001
+    400234: Road Allison Road
+    400236: Road Frelinghuysen Road
+    400238: Road211
+    400240: Road212
+    400242: Road213
+    400244: Road214
+    400246: Road215
+    400248: Road219
+    400250: Road220
+    400252: Road221
+    400254: Road222
+    400256: Road223
+    400258: Road228
+    400260: Road229
+    400262: Road230
+    400264: Road231
+    400266: Road232
+    400268: Road233
+    400270: Road234
+    400272: Road235
+    400274: Road236
+    400276: Road237
+    400278: Road238
+    400280: Road239
+    400282: Road240
+    400284: Road241
+    400286: Road242
+    400288: Road243
+    400290: Road244
+    400292: Road245
+    400294: Road246
+    400296: Road247
+    400298: Road248
+    400300: Road249
+    400302: Road250
+    400304: Road258
+    400306: Road259
+    400308: Road260
+    400310: Road261
+    400312: Road262
+    400314: Road266
+    400316: Road267
+    400318: Road268
+    400320: Road269
+    400322: Road270
+    400324: Road271
+    400326: Road272
+    400328: Road273
+    400330: Road274
+    400332: Road275
+    400334: Road276
+    400336: Road277
+    400338: Road278
+    400340: Road279
+    400342: Road280
+    400344: Road281
+    400346: Road282
+    400348: Road284
+    400350: Road286
+    400352: Road312
+    400354: Road313
+    400356: Road325
+    400358: Road326
+    400360: Road327
+    400362: Road328
+    400364: Road355
+    400366: Road360
+    400368: Road361
+    400370: Road362
+    400372: Road370
+    400374: Road371
+    400376: Road372
+    400378: Road373
+    400380: Road374
+    400382: Road375
+    400384: Road376
+    400386: Road377
+    400388: Road378
+    400390: Road391
+    400392: Road392
+    400394: Road393
+    400396: Road394
+    400398: Road395
+    400400: Road396
+    400402: Road397
+    400404: Road398
+    400406: Road399
+    400408: Road400
+    400410: Road401
+    400412: Road402
+    400414: Road403
+    400416: Road404
+    400418: Road405
+    400420: Road406
+    400422: Road407
+    400424: Road408
+    400426: Road409
+    400428: Road411
+    400430: Road412
+    400432: Road413
+    400434: Road424
+    400436: Road425
+    400438: Road426
+    400440: Road427
+    400442: Road428
+    400444: Road429
+    400446: Road430
+    400448: Road431
+    400450: Road436
+    400452: Road449
+    400454: Road450
+    400456: Road459
+    400458: Road460
+    400460: Road461
+    400462: Road462
+    400464: Road463
+    400466: Road464
+    400468: Road465
+    400470: Road466
+    400472: Road467
+    400474: Road468
+    400476: Road469
+    400478: Road470
+    400480: Road471
+    400482: Road472
+    400484: Road473
+    400486: Road474
+    400488: Road475
+    400490: Road476
+    400492: Road482
+    400494: Road483
+    400496: Road484
+    400498: Road485
+    400500: Road486
+    400502: Road487
+    400504: Road488
+    400506: Road489
+    400508: Road490
+    400510: Road491
+    400512: Road492
+    400514: Road493
+    400516: Road494
+    400518: Road495
+    400520: Road498
+    400522: Road499
+    400524: Road500
+    400526: Road503
+    400528: Road510
+    400530: Road511
+    400532: Road512
+    400534: Road513
+    400536: Road514
+    400538: Road515
+    400540: Road516
+    400542: Road517
+    400544: Road518
+    400546: Road519
+    400548: Road525
+    400550: Road527
+    400552: Road528
+    400554: Road531
+    400556: Road532
+    400558: Road533
+    400560: Road534
+    400562: Road535
+    400564: Road536
+    400566: Road537
+    400568: Road540
+    400570: Road541
+    400572: Road542
+    400574: Road543
+    400576: Road548
+    400578: Road560
+    400580: Road561
+    400582: Road562
+    400584: Road563
+    400586: Road564
+    400588: Road565
+    400590: Road566
+    400592: Road567
+    400594: Road568
+    400596: Road569
+    400598: Road570
+    400600: Road571
+    400602: Road572
+    400604: Road573
+    400606: Road574
+    400608: Road575
+    400610: Road578
+    400612: Road579
+    400614: Road580
+    400616: Road581
+    400618: Road582
+    400620: Road583
+    400622: Road584
+    400624: Road585
+    400626: Road586
+    400628: Road590
+    400630: Road591
+    400632: Road592
+    400634: Road593
+    400636: Road594
+    400638: Road595
+    400640: Road596
+    400642: Road597
+    400644: Road598
+    400646: Road599
+    400648: Road600
+    400650: Road601
+    400652: Road602
+    400654: Road603
+    400656: Road604
+    400658: Road605
+    400660: Road606
+    400662: Road607
+    400664: Road609
+    400666: Road610
+    400668: Road616
+    400670: Road617
+    400672: Road618
+    400674: Road619
+    400676: Road620
+    400678: Road621
+    400680: Road622
+    400682: Road629
+    400684: Road634
+    400686: Road635
+    400688: Road636
+    400690: Road637
+    400692: Road638
+    400694: Road639
+    400696: Road640
+    400698: Road641
+    400700: Road642
+    400702: Road643
+    400704: Road644
+    400706: Road645
+    400708: Road646
+    400710: Road647
+    400712: Road648
+    400714: Road649
+    400716: Road650
+    400718: Road655
+    400720: Road656
+    400722: Road663
+    400724: Road664
+    400726: Road665
+    400728: Road666
+    400730: Road667
+    400732: Road668
+    400734: Road669
+    400736: Road670
+    400738: Road681
+    400740: Road682
+    400742: Road683
+    400744: Road684
+    400746: Road685
+    400748: Road686
+    400750: Road687
+    400752: Road688
+    400754: Road689
+    400756: Road690
+    400758: Road691
+    400760: Road692
+    400762: Road693
+    400764: Road694
+    400766: Road695
+    400768: Road696
+    400770: Road697
+    400772: Road698
+    400774: Road699
+    400776: Road700
+    400778: Road701
+    400780: Road702
+    400782: Road703
+    400784: Road704
+    400786: Road705
+    400788: Road706
+    400790: Road709
+    400792: Road710
+    400794: Road711
+    400796: Road712
+    400798: Road713
+    400800: Road714
+    400802: Road715
+    400804: Road716
+    400806: Road717
+    400808: Road718
+    400810: Road719
+    400812: Road720
+    400814: Road721
+    400816: Road722
+    400818: Road723
+    400820: Road724
+    400822: Road725
+    400824: Road726
+    400826: Road727
+    400828: Road728
+    400830: Road729
+    400832: Road730
+    400834: Road731
+    400836: Road732
+    400838: Road733
+    400840: Road734
+    400842: Road735
+    400844: Road736
+    400846: Road737
+    400848: Road738
+    400850: Road739
+    400852: Road740
+    400854: Road741
+    400856: Road742
+    400858: Road743
+    400860: Road744
+    400862: Road745
+    400864: Road746
+    400866: Road747
+    400868: Road748
+    400870: Road749
+    400872: Road750
+    400874: Road751
+    400876: Road752
+    400878: Road753
+    400880: Road754
+    400882: Road755
+    400884: Road756
+    400886: Road757
+    400888: Road758
+    400890: Road759
+    400892: Road760
+    400894: Road761
+    400896: Road762
+    400898: Road763
+    400900: Road764
+    400902: Road765
+    400904: Road766
+    400906: Road767
+    400908: Road768
+    400910: Road769
+    400912: Road770
+    400914: Road771
+    400916: Road772
+    400918: Road773
+    400920: Road774
+    400922: Road775
+    400924: Road776
+    400926: Road777
+    400928: Road778
+    400930: Road779
+    400932: Road780
+    400934: Road781
+    400936: Road782
+    400938: Road783
+    400940: RoadConnector15
+    400942: RoadConnector179
+    400944: RoadConnector195
+    400946: RoadCrossingAtConnector140
+    400948: RoadJunction1
+    400950: RoadJunction100
+    400952: RoadJunction101
+    400954: RoadJunction104
+    400956: RoadJunction105
+    400958: RoadJunction106
+    400960: RoadJunction109
+    400962: RoadJunction11
+    400964: RoadJunction110
+    400966: RoadJunction113
+    400968: RoadJunction116
+    400970: RoadJunction117
+    400972: RoadJunction118
+    400974: RoadJunction119
+    400976: RoadJunction12
+    400978: RoadJunction122
+    400980: RoadJunction123
+    400982: RoadJunction124
+    400984: RoadJunction13
+    400986: RoadJunction133
+    400988: RoadJunction134
+    400990: RoadJunction136
+    400992: RoadJunction138
+    400994: RoadJunction14
+    400996: RoadJunction148
+    400998: RoadJunction150
+    401000: RoadJunction151
+    401002: RoadJunction156
+    401004: RoadJunction158
+    401006: RoadJunction159
+    401008: RoadJunction16
+    401010: RoadJunction161
+    401012: RoadJunction162
+    401014: RoadJunction164
+    401016: RoadJunction165
+    401018: RoadJunction166
+    401020: RoadJunction167
+    401022: RoadJunction17
+    401024: RoadJunction173
+    401026: RoadJunction174
+    401028: RoadJunction176
+    401030: RoadJunction178
+    401032: RoadJunction18
+    401034: RoadJunction184
+    401036: RoadJunction186
+    401038: RoadJunction187
+    401040: RoadJunction189
+    401042: RoadJunction19
+    401044: RoadJunction190
+    401046: RoadJunction192
+    401048: RoadJunction194
+    401050: RoadJunction196
+    401052: RoadJunction197
+    401054: RoadJunction204
+    401056: RoadJunction205
+    401058: RoadJunction22
+    401060: RoadJunction26
+    401062: RoadJunction28
+    401064: RoadJunction29
+    401066: RoadJunction30
+    401068: RoadJunction31
+    401070: RoadJunction32
+    401072: RoadJunction33
+    401074: RoadJunction34
+    401076: RoadJunction37
+    401078: RoadJunction39
+    401080: RoadJunction42
+    401082: RoadJunction43
+    401084: RoadJunction44
+    401086: RoadJunction45
+    401088: RoadJunction46
+    401090: RoadJunction47
+    401092: RoadJunction49
+    401094: RoadJunction51
+    401096: RoadJunction52
+    401098: RoadJunction53
+    401100: RoadJunction54
+    401102: RoadJunction55
+    401104: RoadJunction56
+    401106: RoadJunction58
+    401108: RoadJunction62
+    401110: RoadJunction63
+    401112: RoadJunction64
+    401114: RoadJunction65
+    401116: RoadJunction66
+    401118: RoadJunction67
+    401120: RoadJunction68
+    401122: RoadJunction70
+    401124: RoadJunction72
+    401126: RoadJunction73
+    401128: RoadJunction74
+    401130: RoadJunction76
+    401132: RoadJunction77
+    401134: RoadJunction78
+    401136: RoadJunction82
+    401138: RoadJunction83
+    401140: RoadJunction84
+    401142: RoadJunction86
+    401144: RoadJunction87
+    401146: RoadJunction88
+    401148: RoadJunction89
+    401150: RoadJunction9
+    401152: RoadJunction90
+    401154: RoadJunction91
+    401156: RoadJunction94
+    401158: RoadJunction95
+    401160: SurfaceParking Lot 49
+    401162: SurfaceParking Lot 53
+    401164: Wall329
+    401166: Wall330
+    401168: Wall331
+    401170: Wall332
+    2100000: GRASS_0
+    2100002: Material.002
+    2100004: BUILDING_DEFAULT_0.003
+    2100006: ROOF_DEFAULT_0.003
+    2100008: ASPHALT_0
+    2100010: ENTRANCE_DEFAULT_0
+    2100012: BUILDING_DEFAULT_0
+    2100014: ROOF_DEFAULT_0
+    2100016: STEPS_DEFAULT_0
+    2100018: WALL_DEFAULT_0
+    2100020: MAT_6_0
+    2100022: BUS_STOP_SIGN_0
+    2100024: STEEL_0
+    2100026: ROAD_MARKING_DASHED_0
+    2100028: BUILDING_DEFAULT_0.001
+    2100030: ROOF_DEFAULT_0.001
+    2100032: BUILDING_DEFAULT_0.002
+    2100034: ROOF_DEFAULT_0.002
+    2100036: BUILDING_DEFAULT_0.004
+    2100038: ROOF_DEFAULT_0.004
+    2100040: BUILDING_DEFAULT_0.005
+    2100042: ROOF_DEFAULT_0.005
+    2100044: BUILDING_DEFAULT_0.006
+    2100046: ROOF_DEFAULT_0.006
+    2100048: BUILDING_DEFAULT_0.007
+    2100050: ROOF_DEFAULT_0.007
+    2100052: BUILDING_DEFAULT_0.008
+    2100054: ROOF_DEFAULT_0.008
+    2100056: BUILDING_DEFAULT_0.011
+    2100058: ROOF_DEFAULT_0.011
+    2100060: BUILDING_DEFAULT_0.010
+    2100062: ROOF_DEFAULT_0.010
+    2100064: BUILDING_DEFAULT_0.009
+    2100066: ROOF_DEFAULT_0.009
+    2100068: BUILDING_DEFAULT_0.014
+    2100070: ROOF_DEFAULT_0.014
+    2100072: BUILDING_DEFAULT_0.013
+    2100074: ROOF_DEFAULT_0.013
+    2100076: BUILDING_DEFAULT_0.012
+    2100078: ROOF_DEFAULT_0.012
+    2100080: BUILDING_DEFAULT_0.015
+    2100082: ROOF_DEFAULT_0.015
+    2100084: BUILDING_DEFAULT_0.016
+    2100086: ROOF_DEFAULT_0.016
+    2100088: BUILDING_DEFAULT_0.017
+    2100090: ROOF_DEFAULT_0.017
+    2100092: BUILDING_DEFAULT_0.018
+    2100094: ROOF_DEFAULT_0.018
+    2100096: BUILDING_DEFAULT_0.019
+    2100098: ROOF_DEFAULT_0.019
+    2100100: BUILDING_DEFAULT_0.020
+    2100102: ROOF_DEFAULT_0.020
+    2100104: BUILDING_DEFAULT_0.021
+    2100106: ROOF_DEFAULT_0.021
+    2100108: BUILDING_DEFAULT_0.022
+    2100110: ROOF_DEFAULT_0.022
+    2100112: Material.003
+    2100114: Material.004
+    2100116: Material.005
+    2100118: Material.006
+    2100120: Material.007
+    2100122: Material.008
+    2300000: Building Allison Road Classroom Building
+    2300002: Building Biomedical Engineering Building
+    2300004: Building Busch Dining Hall
+    2300006: Building Busch Student Center
+    2300008: Building CBIM Modular Building
+    2300010: Building Center For Advanced Infrastructure & Transportation
+    2300012: Building Civil & Environmental Engineering Modular Bldg
+    2300014: Building Civil Engineering Laboratory
+    2300016: Building Computing Research & Education Building
+    2300018: Building Computing Research & Education Building.001
+    2300020: Building Computing Research & Education Building.002
+    2300022: Building Computing Research & Education Building.003
+    2300024: Building Computing Research & Education Building.004
+    2300026: Building Computing Research & Education Building.005
+    2300028: Building Computing Research & Education Building.006
+    2300030: Building Computing Research & Education Building.007
+    2300032: Building Computing Research & Education Building.008
+    2300034: Building Doolittle Building Sanford T.
+    2300036: Building Electrical Engineering Building
+    2300038: Building Fiber Optic Materials Research Building
+    2300040: Building Fiber Optic Materials Research Building.001
+    2300042: Building Fiber Optic Materials Research Building.002
+    2300044: Building Geological Sciences Lab Building
+    2300046: Building Hill Center Bldg For The Mathematical Sciences
+    2300048: Building Hill Center Bldg For The Mathematical Sciences.001
+    2300050: Building Hill Center Bldg For The Mathematical Sciences.002
+    2300052: Building Hill Center Bldg For The Mathematical Sciences.003
+    2300054: Building Hill Center Bldg For The Mathematical Sciences.004
+    2300056: Building Hill Center Bldg For The Mathematical Sciences.005
+    2300058: Building Hill Center Bldg For The Mathematical Sciences.006
+    2300060: Building Life Sciences Building
+    2300062: Building Life Sciences Building.001
+    2300064: Building Life Sciences Building.002
+    2300066: Building Life Sciences Building.003
+    2300068: Building Mccormick Residence Hall - Housing 1989 - Hi-Rise
+    2300070: Building Mclaren Center For Ceramic Research
+    2300072: Building Mclaren Center For Ceramic Research.001
+    2300074: Building Mclaren Center For Ceramic Research.002
+    2300076: Building Nanophysics Laboratory
+    2300078: Building Nelson Biology Laboratories
+    2300080: Building Paul Robeson Cultural Center
+    2300082: Building Physics And Astronomy Building
+    2300084: Building Physics And Astronomy Building.001
+    2300086: Building Physics And Astronomy Building.002
+    2300088: Building Physics Lecture Hall
+    2300090: Building Psychology Building
+    2300092: Building Richard Weeks Hall of Engineering
+    2300094: Building School Of Engineering Building
+    2300096: Building School Of Engineering Building.001
+    2300098: Building Serin Physics Building
+    2300100: Building Serin Physics Building.001
+    2300102: Building Serin Physics Building.002
+    2300104: Building Smithers Hall - Center Of Alcohol Studies
+    2300106: Building Smithers Hall - Center Of Alcohol Studies.001
+    2300108: Building Smithers Hall - Center Of Alcohol Studies.002
+    2300110: Building Smithers Hall - Center Of Alcohol Studies.003
+    2300112: Building Solvents Building - School Of Engineering
+    2300114: Building T. Alexander Pond Science And Engineering Resource Cen
+    2300116: Building T. Alexander Pond Science And Engineering Resource.000
+    2300118: Building Wright Rieman Laboratories
+    2300120: Building Wright Rieman Laboratories.001
+    2300122: Building Wright Rieman Laboratories.002
+    2300124: Building Wright Rieman Laboratories.003
+    2300126: Building Wright Rieman Laboratories.004
+    2300128: Building790
+    2300130: Building797.002
+    2300132: Building798
+    2300134: Building799
+    2300136: Building800
+    2300138: Building801
+    2300140: BuildingEntrance0
+    2300142: BuildingEntrance120
+    2300144: BuildingEntrance125
+    2300146: BuildingEntrance126
+    2300148: BuildingEntrance127
+    2300150: BuildingEntrance129
+    2300152: BuildingEntrance130
+    2300154: BuildingEntrance131
+    2300156: BuildingEntrance132
+    2300158: BuildingEntrance135
+    2300160: BuildingEntrance139
+    2300162: BuildingEntrance142
+    2300164: BuildingEntrance143
+    2300166: BuildingEntrance144
+    2300168: BuildingEntrance145
+    2300170: BuildingEntrance152
+    2300172: BuildingEntrance157
+    2300174: BuildingEntrance160
+    2300176: BuildingEntrance172
+    2300178: BuildingEntrance175
+    2300180: BuildingEntrance181
+    2300182: BuildingEntrance193
+    2300184: BuildingEntrance20
+    2300186: BuildingEntrance200
+    2300188: BuildingEntrance202
+    2300190: BuildingEntrance206
+    2300192: BuildingEntrance21
+    2300194: BuildingEntrance23
+    2300196: BuildingEntrance27
+    2300198: BuildingEntrance61
+    2300200: BuildingEntrance79
+    2300202: BuildingEntrance80
+    2300204: BuildingEntrance96
+    2300206: BuildingEntrance97
+    2300208: BusStop Allison Road Classrooms
+    2300210: BusStop201
+    2300212: BusStop75
+    2300214: Cube
+    2300216: Cube.001
+    2300218: Cube.002
+    2300220: Cube.003
+    2300222: Cube.004
+    2300224: Cube.005
+    2300226: Cube.006
+    2300228: Plane
+    2300230: Plane.001
+    2300232: Road Allison Road
+    2300234: Road Frelinghuysen Road
+    2300236: Road211
+    2300238: Road212
+    2300240: Road213
+    2300242: Road214
+    2300244: Road215
+    2300246: Road219
+    2300248: Road220
+    2300250: Road221
+    2300252: Road222
+    2300254: Road223
+    2300256: Road228
+    2300258: Road229
+    2300260: Road230
+    2300262: Road231
+    2300264: Road232
+    2300266: Road233
+    2300268: Road234
+    2300270: Road235
+    2300272: Road236
+    2300274: Road237
+    2300276: Road238
+    2300278: Road239
+    2300280: Road240
+    2300282: Road241
+    2300284: Road242
+    2300286: Road243
+    2300288: Road244
+    2300290: Road245
+    2300292: Road246
+    2300294: Road247
+    2300296: Road248
+    2300298: Road249
+    2300300: Road250
+    2300302: Road258
+    2300304: Road259
+    2300306: Road260
+    2300308: Road261
+    2300310: Road262
+    2300312: Road266
+    2300314: Road267
+    2300316: Road268
+    2300318: Road269
+    2300320: Road270
+    2300322: Road271
+    2300324: Road272
+    2300326: Road273
+    2300328: Road274
+    2300330: Road275
+    2300332: Road276
+    2300334: Road277
+    2300336: Road278
+    2300338: Road279
+    2300340: Road280
+    2300342: Road281
+    2300344: Road282
+    2300346: Road284
+    2300348: Road286
+    2300350: Road312
+    2300352: Road313
+    2300354: Road325
+    2300356: Road326
+    2300358: Road327
+    2300360: Road328
+    2300362: Road355
+    2300364: Road360
+    2300366: Road361
+    2300368: Road362
+    2300370: Road370
+    2300372: Road371
+    2300374: Road372
+    2300376: Road373
+    2300378: Road374
+    2300380: Road375
+    2300382: Road376
+    2300384: Road377
+    2300386: Road378
+    2300388: Road391
+    2300390: Road392
+    2300392: Road393
+    2300394: Road394
+    2300396: Road395
+    2300398: Road396
+    2300400: Road397
+    2300402: Road398
+    2300404: Road399
+    2300406: Road400
+    2300408: Road401
+    2300410: Road402
+    2300412: Road403
+    2300414: Road404
+    2300416: Road405
+    2300418: Road406
+    2300420: Road407
+    2300422: Road408
+    2300424: Road409
+    2300426: Road411
+    2300428: Road412
+    2300430: Road413
+    2300432: Road424
+    2300434: Road425
+    2300436: Road426
+    2300438: Road427
+    2300440: Road428
+    2300442: Road429
+    2300444: Road430
+    2300446: Road431
+    2300448: Road436
+    2300450: Road449
+    2300452: Road450
+    2300454: Road459
+    2300456: Road460
+    2300458: Road461
+    2300460: Road462
+    2300462: Road463
+    2300464: Road464
+    2300466: Road465
+    2300468: Road466
+    2300470: Road467
+    2300472: Road468
+    2300474: Road469
+    2300476: Road470
+    2300478: Road471
+    2300480: Road472
+    2300482: Road473
+    2300484: Road474
+    2300486: Road475
+    2300488: Road476
+    2300490: Road482
+    2300492: Road483
+    2300494: Road484
+    2300496: Road485
+    2300498: Road486
+    2300500: Road487
+    2300502: Road488
+    2300504: Road489
+    2300506: Road490
+    2300508: Road491
+    2300510: Road492
+    2300512: Road493
+    2300514: Road494
+    2300516: Road495
+    2300518: Road498
+    2300520: Road499
+    2300522: Road500
+    2300524: Road503
+    2300526: Road510
+    2300528: Road511
+    2300530: Road512
+    2300532: Road513
+    2300534: Road514
+    2300536: Road515
+    2300538: Road516
+    2300540: Road517
+    2300542: Road518
+    2300544: Road519
+    2300546: Road525
+    2300548: Road527
+    2300550: Road528
+    2300552: Road531
+    2300554: Road532
+    2300556: Road533
+    2300558: Road534
+    2300560: Road535
+    2300562: Road536
+    2300564: Road537
+    2300566: Road540
+    2300568: Road541
+    2300570: Road542
+    2300572: Road543
+    2300574: Road548
+    2300576: Road560
+    2300578: Road561
+    2300580: Road562
+    2300582: Road563
+    2300584: Road564
+    2300586: Road565
+    2300588: Road566
+    2300590: Road567
+    2300592: Road568
+    2300594: Road569
+    2300596: Road570
+    2300598: Road571
+    2300600: Road572
+    2300602: Road573
+    2300604: Road574
+    2300606: Road575
+    2300608: Road578
+    2300610: Road579
+    2300612: Road580
+    2300614: Road581
+    2300616: Road582
+    2300618: Road583
+    2300620: Road584
+    2300622: Road585
+    2300624: Road586
+    2300626: Road590
+    2300628: Road591
+    2300630: Road592
+    2300632: Road593
+    2300634: Road594
+    2300636: Road595
+    2300638: Road596
+    2300640: Road597
+    2300642: Road598
+    2300644: Road599
+    2300646: Road600
+    2300648: Road601
+    2300650: Road602
+    2300652: Road603
+    2300654: Road604
+    2300656: Road605
+    2300658: Road606
+    2300660: Road607
+    2300662: Road609
+    2300664: Road610
+    2300666: Road616
+    2300668: Road617
+    2300670: Road618
+    2300672: Road619
+    2300674: Road620
+    2300676: Road621
+    2300678: Road622
+    2300680: Road629
+    2300682: Road634
+    2300684: Road635
+    2300686: Road636
+    2300688: Road637
+    2300690: Road638
+    2300692: Road639
+    2300694: Road640
+    2300696: Road641
+    2300698: Road642
+    2300700: Road643
+    2300702: Road644
+    2300704: Road645
+    2300706: Road646
+    2300708: Road647
+    2300710: Road648
+    2300712: Road649
+    2300714: Road650
+    2300716: Road655
+    2300718: Road656
+    2300720: Road663
+    2300722: Road664
+    2300724: Road665
+    2300726: Road666
+    2300728: Road667
+    2300730: Road668
+    2300732: Road669
+    2300734: Road670
+    2300736: Road681
+    2300738: Road682
+    2300740: Road683
+    2300742: Road684
+    2300744: Road685
+    2300746: Road686
+    2300748: Road687
+    2300750: Road688
+    2300752: Road689
+    2300754: Road690
+    2300756: Road691
+    2300758: Road692
+    2300760: Road693
+    2300762: Road694
+    2300764: Road695
+    2300766: Road696
+    2300768: Road697
+    2300770: Road698
+    2300772: Road699
+    2300774: Road700
+    2300776: Road701
+    2300778: Road702
+    2300780: Road703
+    2300782: Road704
+    2300784: Road705
+    2300786: Road706
+    2300788: Road709
+    2300790: Road710
+    2300792: Road711
+    2300794: Road712
+    2300796: Road713
+    2300798: Road714
+    2300800: Road715
+    2300802: Road716
+    2300804: Road717
+    2300806: Road718
+    2300808: Road719
+    2300810: Road720
+    2300812: Road721
+    2300814: Road722
+    2300816: Road723
+    2300818: Road724
+    2300820: Road725
+    2300822: Road726
+    2300824: Road727
+    2300826: Road728
+    2300828: Road729
+    2300830: Road730
+    2300832: Road731
+    2300834: Road732
+    2300836: Road733
+    2300838: Road734
+    2300840: Road735
+    2300842: Road736
+    2300844: Road737
+    2300846: Road738
+    2300848: Road739
+    2300850: Road740
+    2300852: Road741
+    2300854: Road742
+    2300856: Road743
+    2300858: Road744
+    2300860: Road745
+    2300862: Road746
+    2300864: Road747
+    2300866: Road748
+    2300868: Road749
+    2300870: Road750
+    2300872: Road751
+    2300874: Road752
+    2300876: Road753
+    2300878: Road754
+    2300880: Road755
+    2300882: Road756
+    2300884: Road757
+    2300886: Road758
+    2300888: Road759
+    2300890: Road760
+    2300892: Road761
+    2300894: Road762
+    2300896: Road763
+    2300898: Road764
+    2300900: Road765
+    2300902: Road766
+    2300904: Road767
+    2300906: Road768
+    2300908: Road769
+    2300910: Road770
+    2300912: Road771
+    2300914: Road772
+    2300916: Road773
+    2300918: Road774
+    2300920: Road775
+    2300922: Road776
+    2300924: Road777
+    2300926: Road778
+    2300928: Road779
+    2300930: Road780
+    2300932: Road781
+    2300934: Road782
+    2300936: Road783
+    2300938: RoadConnector15
+    2300940: RoadConnector179
+    2300942: RoadConnector195
+    2300944: RoadCrossingAtConnector140
+    2300946: RoadJunction1
+    2300948: RoadJunction100
+    2300950: RoadJunction101
+    2300952: RoadJunction104
+    2300954: RoadJunction105
+    2300956: RoadJunction106
+    2300958: RoadJunction109
+    2300960: RoadJunction11
+    2300962: RoadJunction110
+    2300964: RoadJunction113
+    2300966: RoadJunction116
+    2300968: RoadJunction117
+    2300970: RoadJunction118
+    2300972: RoadJunction119
+    2300974: RoadJunction12
+    2300976: RoadJunction122
+    2300978: RoadJunction123
+    2300980: RoadJunction124
+    2300982: RoadJunction13
+    2300984: RoadJunction133
+    2300986: RoadJunction134
+    2300988: RoadJunction136
+    2300990: RoadJunction138
+    2300992: RoadJunction14
+    2300994: RoadJunction148
+    2300996: RoadJunction150
+    2300998: RoadJunction151
+    2301000: RoadJunction156
+    2301002: RoadJunction158
+    2301004: RoadJunction159
+    2301006: RoadJunction16
+    2301008: RoadJunction161
+    2301010: RoadJunction162
+    2301012: RoadJunction164
+    2301014: RoadJunction165
+    2301016: RoadJunction166
+    2301018: RoadJunction167
+    2301020: RoadJunction17
+    2301022: RoadJunction173
+    2301024: RoadJunction174
+    2301026: RoadJunction176
+    2301028: RoadJunction178
+    2301030: RoadJunction18
+    2301032: RoadJunction184
+    2301034: RoadJunction186
+    2301036: RoadJunction187
+    2301038: RoadJunction189
+    2301040: RoadJunction19
+    2301042: RoadJunction190
+    2301044: RoadJunction192
+    2301046: RoadJunction194
+    2301048: RoadJunction196
+    2301050: RoadJunction197
+    2301052: RoadJunction204
+    2301054: RoadJunction205
+    2301056: RoadJunction22
+    2301058: RoadJunction26
+    2301060: RoadJunction28
+    2301062: RoadJunction29
+    2301064: RoadJunction30
+    2301066: RoadJunction31
+    2301068: RoadJunction32
+    2301070: RoadJunction33
+    2301072: RoadJunction34
+    2301074: RoadJunction37
+    2301076: RoadJunction39
+    2301078: RoadJunction42
+    2301080: RoadJunction43
+    2301082: RoadJunction44
+    2301084: RoadJunction45
+    2301086: RoadJunction46
+    2301088: RoadJunction47
+    2301090: RoadJunction49
+    2301092: RoadJunction51
+    2301094: RoadJunction52
+    2301096: RoadJunction53
+    2301098: RoadJunction54
+    2301100: RoadJunction55
+    2301102: RoadJunction56
+    2301104: RoadJunction58
+    2301106: RoadJunction62
+    2301108: RoadJunction63
+    2301110: RoadJunction64
+    2301112: RoadJunction65
+    2301114: RoadJunction66
+    2301116: RoadJunction67
+    2301118: RoadJunction68
+    2301120: RoadJunction70
+    2301122: RoadJunction72
+    2301124: RoadJunction73
+    2301126: RoadJunction74
+    2301128: RoadJunction76
+    2301130: RoadJunction77
+    2301132: RoadJunction78
+    2301134: RoadJunction82
+    2301136: RoadJunction83
+    2301138: RoadJunction84
+    2301140: RoadJunction86
+    2301142: RoadJunction87
+    2301144: RoadJunction88
+    2301146: RoadJunction89
+    2301148: RoadJunction9
+    2301150: RoadJunction90
+    2301152: RoadJunction91
+    2301154: RoadJunction94
+    2301156: RoadJunction95
+    2301158: SurfaceParking Lot 49
+    2301160: SurfaceParking Lot 53
+    2301162: Wall329
+    2301164: Wall330
+    2301166: Wall331
+    2301168: Wall332
+    3300000: Building Allison Road Classroom Building
+    3300002: Building Biomedical Engineering Building
+    3300004: Building Busch Dining Hall
+    3300006: Building Busch Student Center
+    3300008: Building CBIM Modular Building
+    3300010: Building Center For Advanced Infrastructure & Transportation
+    3300012: Building Civil & Environmental Engineering Modular Bldg
+    3300014: Building Civil Engineering Laboratory
+    3300016: Building Computing Research & Education Building
+    3300018: Building Computing Research & Education Building.001
+    3300020: Building Computing Research & Education Building.002
+    3300022: Building Computing Research & Education Building.003
+    3300024: Building Computing Research & Education Building.004
+    3300026: Building Computing Research & Education Building.005
+    3300028: Building Computing Research & Education Building.006
+    3300030: Building Computing Research & Education Building.007
+    3300032: Building Computing Research & Education Building.008
+    3300034: Building Doolittle Building Sanford T.
+    3300036: Building Electrical Engineering Building
+    3300038: Building Fiber Optic Materials Research Building
+    3300040: Building Fiber Optic Materials Research Building.001
+    3300042: Building Fiber Optic Materials Research Building.002
+    3300044: Building Geological Sciences Lab Building
+    3300046: Building Hill Center Bldg For The Mathematical Sciences
+    3300048: Building Hill Center Bldg For The Mathematical Sciences.001
+    3300050: Building Hill Center Bldg For The Mathematical Sciences.002
+    3300052: Building Hill Center Bldg For The Mathematical Sciences.003
+    3300054: Building Hill Center Bldg For The Mathematical Sciences.004
+    3300056: Building Hill Center Bldg For The Mathematical Sciences.005
+    3300058: Building Hill Center Bldg For The Mathematical Sciences.006
+    3300060: Building Life Sciences Building
+    3300062: Building Life Sciences Building.001
+    3300064: Building Life Sciences Building.002
+    3300066: Building Life Sciences Building.003
+    3300068: Building Mccormick Residence Hall - Housing 1989 - Hi-Rise
+    3300070: Building Mclaren Center For Ceramic Research
+    3300072: Building Mclaren Center For Ceramic Research.001
+    3300074: Building Mclaren Center For Ceramic Research.002
+    3300076: Building Nanophysics Laboratory
+    3300078: Building Nelson Biology Laboratories
+    3300080: Building Paul Robeson Cultural Center
+    3300082: Building Physics And Astronomy Building
+    3300084: Building Physics And Astronomy Building.001
+    3300086: Building Physics And Astronomy Building.002
+    3300088: Building Physics Lecture Hall
+    3300090: Building Psychology Building
+    3300092: Building Richard Weeks Hall of Engineering
+    3300094: Building School Of Engineering Building
+    3300096: Building School Of Engineering Building.001
+    3300098: Building Serin Physics Building
+    3300100: Building Serin Physics Building.001
+    3300102: Building Serin Physics Building.002
+    3300104: Building Smithers Hall - Center Of Alcohol Studies
+    3300106: Building Smithers Hall - Center Of Alcohol Studies.001
+    3300108: Building Smithers Hall - Center Of Alcohol Studies.002
+    3300110: Building Smithers Hall - Center Of Alcohol Studies.003
+    3300112: Building Solvents Building - School Of Engineering
+    3300114: Building T. Alexander Pond Science And Engineering Resource Cen
+    3300116: Building T. Alexander Pond Science And Engineering Resource.000
+    3300118: Building Wright Rieman Laboratories
+    3300120: Building Wright Rieman Laboratories.001
+    3300122: Building Wright Rieman Laboratories.002
+    3300124: Building Wright Rieman Laboratories.003
+    3300126: Building Wright Rieman Laboratories.004
+    3300128: Building790
+    3300130: Building797.002
+    3300132: Building798
+    3300134: Building799
+    3300136: Building800
+    3300138: Building801
+    3300140: BuildingEntrance0
+    3300142: BuildingEntrance120
+    3300144: BuildingEntrance125
+    3300146: BuildingEntrance126
+    3300148: BuildingEntrance127
+    3300150: BuildingEntrance129
+    3300152: BuildingEntrance130
+    3300154: BuildingEntrance131
+    3300156: BuildingEntrance132
+    3300158: BuildingEntrance135
+    3300160: BuildingEntrance139
+    3300162: BuildingEntrance142
+    3300164: BuildingEntrance143
+    3300166: BuildingEntrance144
+    3300168: BuildingEntrance145
+    3300170: BuildingEntrance152
+    3300172: BuildingEntrance157
+    3300174: BuildingEntrance160
+    3300176: BuildingEntrance172
+    3300178: BuildingEntrance175
+    3300180: BuildingEntrance181
+    3300182: BuildingEntrance193
+    3300184: BuildingEntrance20
+    3300186: BuildingEntrance200
+    3300188: BuildingEntrance202
+    3300190: BuildingEntrance206
+    3300192: BuildingEntrance21
+    3300194: BuildingEntrance23
+    3300196: BuildingEntrance27
+    3300198: BuildingEntrance61
+    3300200: BuildingEntrance79
+    3300202: BuildingEntrance80
+    3300204: BuildingEntrance96
+    3300206: BuildingEntrance97
+    3300208: BusStop Allison Road Classrooms
+    3300210: BusStop201
+    3300212: BusStop75
+    3300214: Cube
+    3300216: Cube.001
+    3300218: Cube.002
+    3300220: Cube.003
+    3300222: Cube.004
+    3300224: Cube.005
+    3300226: Cube.006
+    3300228: Plane
+    3300230: Plane.001
+    3300232: Road Allison Road
+    3300234: Road Frelinghuysen Road
+    3300236: Road211
+    3300238: Road212
+    3300240: Road213
+    3300242: Road214
+    3300244: Road215
+    3300246: Road219
+    3300248: Road220
+    3300250: Road221
+    3300252: Road222
+    3300254: Road223
+    3300256: Road228
+    3300258: Road229
+    3300260: Road230
+    3300262: Road231
+    3300264: Road232
+    3300266: Road233
+    3300268: Road234
+    3300270: Road235
+    3300272: Road236
+    3300274: Road237
+    3300276: Road238
+    3300278: Road239
+    3300280: Road240
+    3300282: Road241
+    3300284: Road242
+    3300286: Road243
+    3300288: Road244
+    3300290: Road245
+    3300292: Road246
+    3300294: Road247
+    3300296: Road248
+    3300298: Road249
+    3300300: Road250
+    3300302: Road258
+    3300304: Road259
+    3300306: Road260
+    3300308: Road261
+    3300310: Road262
+    3300312: Road266
+    3300314: Road267
+    3300316: Road268
+    3300318: Road269
+    3300320: Road270
+    3300322: Road271
+    3300324: Road272
+    3300326: Road273
+    3300328: Road274
+    3300330: Road275
+    3300332: Road276
+    3300334: Road277
+    3300336: Road278
+    3300338: Road279
+    3300340: Road280
+    3300342: Road281
+    3300344: Road282
+    3300346: Road284
+    3300348: Road286
+    3300350: Road312
+    3300352: Road313
+    3300354: Road325
+    3300356: Road326
+    3300358: Road327
+    3300360: Road328
+    3300362: Road355
+    3300364: Road360
+    3300366: Road361
+    3300368: Road362
+    3300370: Road370
+    3300372: Road371
+    3300374: Road372
+    3300376: Road373
+    3300378: Road374
+    3300380: Road375
+    3300382: Road376
+    3300384: Road377
+    3300386: Road378
+    3300388: Road391
+    3300390: Road392
+    3300392: Road393
+    3300394: Road394
+    3300396: Road395
+    3300398: Road396
+    3300400: Road397
+    3300402: Road398
+    3300404: Road399
+    3300406: Road400
+    3300408: Road401
+    3300410: Road402
+    3300412: Road403
+    3300414: Road404
+    3300416: Road405
+    3300418: Road406
+    3300420: Road407
+    3300422: Road408
+    3300424: Road409
+    3300426: Road411
+    3300428: Road412
+    3300430: Road413
+    3300432: Road424
+    3300434: Road425
+    3300436: Road426
+    3300438: Road427
+    3300440: Road428
+    3300442: Road429
+    3300444: Road430
+    3300446: Road431
+    3300448: Road436
+    3300450: Road449
+    3300452: Road450
+    3300454: Road459
+    3300456: Road460
+    3300458: Road461
+    3300460: Road462
+    3300462: Road463
+    3300464: Road464
+    3300466: Road465
+    3300468: Road466
+    3300470: Road467
+    3300472: Road468
+    3300474: Road469
+    3300476: Road470
+    3300478: Road471
+    3300480: Road472
+    3300482: Road473
+    3300484: Road474
+    3300486: Road475
+    3300488: Road476
+    3300490: Road482
+    3300492: Road483
+    3300494: Road484
+    3300496: Road485
+    3300498: Road486
+    3300500: Road487
+    3300502: Road488
+    3300504: Road489
+    3300506: Road490
+    3300508: Road491
+    3300510: Road492
+    3300512: Road493
+    3300514: Road494
+    3300516: Road495
+    3300518: Road498
+    3300520: Road499
+    3300522: Road500
+    3300524: Road503
+    3300526: Road510
+    3300528: Road511
+    3300530: Road512
+    3300532: Road513
+    3300534: Road514
+    3300536: Road515
+    3300538: Road516
+    3300540: Road517
+    3300542: Road518
+    3300544: Road519
+    3300546: Road525
+    3300548: Road527
+    3300550: Road528
+    3300552: Road531
+    3300554: Road532
+    3300556: Road533
+    3300558: Road534
+    3300560: Road535
+    3300562: Road536
+    3300564: Road537
+    3300566: Road540
+    3300568: Road541
+    3300570: Road542
+    3300572: Road543
+    3300574: Road548
+    3300576: Road560
+    3300578: Road561
+    3300580: Road562
+    3300582: Road563
+    3300584: Road564
+    3300586: Road565
+    3300588: Road566
+    3300590: Road567
+    3300592: Road568
+    3300594: Road569
+    3300596: Road570
+    3300598: Road571
+    3300600: Road572
+    3300602: Road573
+    3300604: Road574
+    3300606: Road575
+    3300608: Road578
+    3300610: Road579
+    3300612: Road580
+    3300614: Road581
+    3300616: Road582
+    3300618: Road583
+    3300620: Road584
+    3300622: Road585
+    3300624: Road586
+    3300626: Road590
+    3300628: Road591
+    3300630: Road592
+    3300632: Road593
+    3300634: Road594
+    3300636: Road595
+    3300638: Road596
+    3300640: Road597
+    3300642: Road598
+    3300644: Road599
+    3300646: Road600
+    3300648: Road601
+    3300650: Road602
+    3300652: Road603
+    3300654: Road604
+    3300656: Road605
+    3300658: Road606
+    3300660: Road607
+    3300662: Road609
+    3300664: Road610
+    3300666: Road616
+    3300668: Road617
+    3300670: Road618
+    3300672: Road619
+    3300674: Road620
+    3300676: Road621
+    3300678: Road622
+    3300680: Road629
+    3300682: Road634
+    3300684: Road635
+    3300686: Road636
+    3300688: Road637
+    3300690: Road638
+    3300692: Road639
+    3300694: Road640
+    3300696: Road641
+    3300698: Road642
+    3300700: Road643
+    3300702: Road644
+    3300704: Road645
+    3300706: Road646
+    3300708: Road647
+    3300710: Road648
+    3300712: Road649
+    3300714: Road650
+    3300716: Road655
+    3300718: Road656
+    3300720: Road663
+    3300722: Road664
+    3300724: Road665
+    3300726: Road666
+    3300728: Road667
+    3300730: Road668
+    3300732: Road669
+    3300734: Road670
+    3300736: Road681
+    3300738: Road682
+    3300740: Road683
+    3300742: Road684
+    3300744: Road685
+    3300746: Road686
+    3300748: Road687
+    3300750: Road688
+    3300752: Road689
+    3300754: Road690
+    3300756: Road691
+    3300758: Road692
+    3300760: Road693
+    3300762: Road694
+    3300764: Road695
+    3300766: Road696
+    3300768: Road697
+    3300770: Road698
+    3300772: Road699
+    3300774: Road700
+    3300776: Road701
+    3300778: Road702
+    3300780: Road703
+    3300782: Road704
+    3300784: Road705
+    3300786: Road706
+    3300788: Road709
+    3300790: Road710
+    3300792: Road711
+    3300794: Road712
+    3300796: Road713
+    3300798: Road714
+    3300800: Road715
+    3300802: Road716
+    3300804: Road717
+    3300806: Road718
+    3300808: Road719
+    3300810: Road720
+    3300812: Road721
+    3300814: Road722
+    3300816: Road723
+    3300818: Road724
+    3300820: Road725
+    3300822: Road726
+    3300824: Road727
+    3300826: Road728
+    3300828: Road729
+    3300830: Road730
+    3300832: Road731
+    3300834: Road732
+    3300836: Road733
+    3300838: Road734
+    3300840: Road735
+    3300842: Road736
+    3300844: Road737
+    3300846: Road738
+    3300848: Road739
+    3300850: Road740
+    3300852: Road741
+    3300854: Road742
+    3300856: Road743
+    3300858: Road744
+    3300860: Road745
+    3300862: Road746
+    3300864: Road747
+    3300866: Road748
+    3300868: Road749
+    3300870: Road750
+    3300872: Road751
+    3300874: Road752
+    3300876: Road753
+    3300878: Road754
+    3300880: Road755
+    3300882: Road756
+    3300884: Road757
+    3300886: Road758
+    3300888: Road759
+    3300890: Road760
+    3300892: Road761
+    3300894: Road762
+    3300896: Road763
+    3300898: Road764
+    3300900: Road765
+    3300902: Road766
+    3300904: Road767
+    3300906: Road768
+    3300908: Road769
+    3300910: Road770
+    3300912: Road771
+    3300914: Road772
+    3300916: Road773
+    3300918: Road774
+    3300920: Road775
+    3300922: Road776
+    3300924: Road777
+    3300926: Road778
+    3300928: Road779
+    3300930: Road780
+    3300932: Road781
+    3300934: Road782
+    3300936: Road783
+    3300938: RoadConnector15
+    3300940: RoadConnector179
+    3300942: RoadConnector195
+    3300944: RoadCrossingAtConnector140
+    3300946: RoadJunction1
+    3300948: RoadJunction100
+    3300950: RoadJunction101
+    3300952: RoadJunction104
+    3300954: RoadJunction105
+    3300956: RoadJunction106
+    3300958: RoadJunction109
+    3300960: RoadJunction11
+    3300962: RoadJunction110
+    3300964: RoadJunction113
+    3300966: RoadJunction116
+    3300968: RoadJunction117
+    3300970: RoadJunction118
+    3300972: RoadJunction119
+    3300974: RoadJunction12
+    3300976: RoadJunction122
+    3300978: RoadJunction123
+    3300980: RoadJunction124
+    3300982: RoadJunction13
+    3300984: RoadJunction133
+    3300986: RoadJunction134
+    3300988: RoadJunction136
+    3300990: RoadJunction138
+    3300992: RoadJunction14
+    3300994: RoadJunction148
+    3300996: RoadJunction150
+    3300998: RoadJunction151
+    3301000: RoadJunction156
+    3301002: RoadJunction158
+    3301004: RoadJunction159
+    3301006: RoadJunction16
+    3301008: RoadJunction161
+    3301010: RoadJunction162
+    3301012: RoadJunction164
+    3301014: RoadJunction165
+    3301016: RoadJunction166
+    3301018: RoadJunction167
+    3301020: RoadJunction17
+    3301022: RoadJunction173
+    3301024: RoadJunction174
+    3301026: RoadJunction176
+    3301028: RoadJunction178
+    3301030: RoadJunction18
+    3301032: RoadJunction184
+    3301034: RoadJunction186
+    3301036: RoadJunction187
+    3301038: RoadJunction189
+    3301040: RoadJunction19
+    3301042: RoadJunction190
+    3301044: RoadJunction192
+    3301046: RoadJunction194
+    3301048: RoadJunction196
+    3301050: RoadJunction197
+    3301052: RoadJunction204
+    3301054: RoadJunction205
+    3301056: RoadJunction22
+    3301058: RoadJunction26
+    3301060: RoadJunction28
+    3301062: RoadJunction29
+    3301064: RoadJunction30
+    3301066: RoadJunction31
+    3301068: RoadJunction32
+    3301070: RoadJunction33
+    3301072: RoadJunction34
+    3301074: RoadJunction37
+    3301076: RoadJunction39
+    3301078: RoadJunction42
+    3301080: RoadJunction43
+    3301082: RoadJunction44
+    3301084: RoadJunction45
+    3301086: RoadJunction46
+    3301088: RoadJunction47
+    3301090: RoadJunction49
+    3301092: RoadJunction51
+    3301094: RoadJunction52
+    3301096: RoadJunction53
+    3301098: RoadJunction54
+    3301100: RoadJunction55
+    3301102: RoadJunction56
+    3301104: RoadJunction58
+    3301106: RoadJunction62
+    3301108: RoadJunction63
+    3301110: RoadJunction64
+    3301112: RoadJunction65
+    3301114: RoadJunction66
+    3301116: RoadJunction67
+    3301118: RoadJunction68
+    3301120: RoadJunction70
+    3301122: RoadJunction72
+    3301124: RoadJunction73
+    3301126: RoadJunction74
+    3301128: RoadJunction76
+    3301130: RoadJunction77
+    3301132: RoadJunction78
+    3301134: RoadJunction82
+    3301136: RoadJunction83
+    3301138: RoadJunction84
+    3301140: RoadJunction86
+    3301142: RoadJunction87
+    3301144: RoadJunction88
+    3301146: RoadJunction89
+    3301148: RoadJunction9
+    3301150: RoadJunction90
+    3301152: RoadJunction91
+    3301154: RoadJunction94
+    3301156: RoadJunction95
+    3301158: SurfaceParking Lot 49
+    3301160: SurfaceParking Lot 53
+    3301162: Wall329
+    3301164: Wall330
+    3301166: Wall331
+    3301168: Wall332
+    4300000: Plane
+    4300002: Cube
+    4300004: Building Hill Center Bldg For The Mathematical Sciences.003
+    4300006: Road712
+    4300008: BuildingEntrance127
+    4300010: Road650
+    4300012: Road581
+    4300014: Road641
+    4300016: Road709
+    4300018: Road736
+    4300020: Building Allison Road Classroom Building
+    4300022: Road605
+    4300024: Road536
+    4300026: RoadJunction73
+    4300028: RoadJunction19
+    4300030: Road757
+    4300032: Road663
+    4300034: Road573
+    4300036: Road579
+    4300038: Road519
+    4300040: Road568
+    4300042: Road696
+    4300044: RoadJunction31
+    4300046: Road722
+    4300048: Road540
+    4300050: Road517
+    4300052: Road761
+    4300054: Road392
+    4300056: Road682
+    4300058: Road280
+    4300060: Road467
+    4300062: Road593
+    4300064: Road219
+    4300066: Road503
+    4300068: Road569
+    4300070: Building Mccormick Residence Hall - Housing 1989 - Hi-Rise
+    4300072: BuildingEntrance20
+    4300074: Road710
+    4300076: Road618
+    4300078: RoadJunction32
+    4300080: Road242
+    4300082: Road634
+    4300084: Road Allison Road
+    4300086: Road493
+    4300088: RoadJunction122
+    4300090: Road399
+    4300092: Road749
+    4300094: Road212
+    4300096: Road534
+    4300098: Road733
+    4300100: Road473
+    4300102: Road774
+    4300104: Road214
+    4300106: RoadJunction156
+    4300108: Road268
+    4300110: Road542
+    4300112: Road763
+    4300114: Road699
+    4300116: Road685
+    4300118: Road237
+    4300120: Road459
+    4300122: BuildingEntrance97
+    4300124: Building Biomedical Engineering Building
+    4300126: RoadJunction104
+    4300128: RoadJunction67
+    4300130: Road221
+    4300132: RoadJunction17
+    4300134: Road239
+    4300136: RoadJunction192
+    4300138: BuildingEntrance135
+    4300140: Building CBIM Modular Building
+    4300142: Road406
+    4300144: Road327
+    4300146: Road276
+    4300148: Road698
+    4300150: Road270
+    4300152: Road360
+    4300154: Road236
+    4300156: RoadJunction53
+    4300158: Road535
+    4300160: Road693
+    4300162: BuildingEntrance193
+    4300164: RoadJunction158
+    4300166: Building Psychology Building
+    4300168: Road246
+    4300170: RoadJunction204
+    4300172: RoadJunction72
+    4300174: RoadJunction62
+    4300176: RoadConnector195
+    4300178: Road531
+    4300180: Road570
+    4300182: Road603
+    4300184: Road243
+    4300186: Road748
+    4300188: Road248
+    4300190: Road261
+    4300192: Road691
+    4300194: RoadJunction134
+    4300196: Road449
+    4300198: Road616
+    4300200: Road716
+    4300202: Road470
+    4300204: Road596
+    4300206: RoadJunction117
+    4300208: Road395
+    4300210: Road328
+    4300212: RoadJunction1
+    4300214: Wall330
+    4300216: Road249
+    4300218: Road371
+    4300220: BuildingEntrance23
+    4300222: Road702
+    4300224: Road597
+    4300226: Road747
+    4300228: Road649
+    4300230: Road725
+    4300232: Road402
+    4300234: Road374
+    4300236: Road424
+    4300238: Road640
+    4300240: Road378
+    4300242: RoadJunction189
+    4300244: Road396
+    4300246: RoadJunction167
+    4300248: Road361
+    4300250: Building790
+    4300252: Road744
+    4300254: Road665
+    4300256: RoadJunction151
+    4300258: Road738
+    4300260: Road229
+    4300262: Road619
+    4300264: BuildingEntrance142
+    4300266: RoadJunction66
+    4300268: RoadJunction78
+    4300270: RoadJunction86
+    4300272: Road482
+    4300274: Road758
+    4300276: Road770
+    4300278: Road269
+    4300280: RoadJunction89
+    4300282: BuildingEntrance175
+    4300284: Road489
+    4300286: Road644
+    4300288: Road776
+    4300290: Building School Of Engineering Building
+    4300292: Road463
+    4300294: Road585
+    4300296: RoadJunction29
+    4300298: Road762
+    4300300: Building Civil Engineering Laboratory
+    4300302: Road723
+    4300304: BusStop Allison Road Classrooms
+    4300306: RoadJunction51
+    4300308: Road510
+    4300310: Road639
+    4300312: Road724
+    4300314: Road607
+    4300316: Road684
+    4300318: RoadJunction95
+    4300320: Wall329
+    4300322: Building Paul Robeson Cultural Center
+    4300324: Road750
+    4300326: Road768
+    4300328: Road638
+    4300330: Road266
+    4300332: Road429
+    4300334: Road643
+    4300336: Road279
+    4300338: Road474
+    4300340: RoadJunction119
+    4300342: Road670
+    4300344: Road404
+    4300346: Road398
+    4300348: RoadJunction162
+    4300350: Road720
+    4300352: Road543
+    4300354: Road260
+    4300356: Road566
+    4300358: Road213
+    4300360: RoadJunction113
+    4300362: Road325
+    4300364: RoadJunction118
+    4300366: Road739
+    4300368: BuildingEntrance145
+    4300370: Road313
+    4300372: Building Mclaren Center For Ceramic Research
+    4300374: Road647
+    4300376: Road780
+    4300378: Road779
+    4300380: Road466
+    4300382: Road409
+    4300384: BuildingEntrance0
+    4300386: BusStop201
+    4300388: BuildingEntrance61
+    4300390: Road500
+    4300392: Road485
+    4300394: Road400
+    4300396: RoadJunction52
+    4300398: Road620
+    4300400: BuildingEntrance129
+    4300402: RoadJunction161
+    4300404: Building800
+    4300406: Road233
+    4300408: Road782
+    4300410: RoadJunction45
+    4300412: RoadConnector179
+    4300414: Road610
+    4300416: Road495
+    4300418: RoadJunction190
+    4300420: Road511
+    4300422: BuildingEntrance152
+    4300424: RoadJunction110
+    4300426: Building Computing Research & Education Building
+    4300428: BusStop75
+    4300430: Road376
+    4300432: Road238
+    4300434: Road Frelinghuysen Road
+    4300436: Road563
+    4300438: Road401
+    4300440: Road464
+    4300442: Road514
+    4300444: BuildingEntrance79
+    4300446: Road583
+    4300448: RoadJunction70
+    4300450: BuildingEntrance21
+    4300452: Road737
+    4300454: RoadJunction174
+    4300456: Road586
+    4300458: RoadJunction148
+    4300460: Road752
+    4300462: RoadJunction82
+    4300464: Building Physics Lecture Hall
+    4300466: Building Busch Student Center
+    4300468: Road537
+    4300470: Building Busch Dining Hall
+    4300472: Road778
+    4300474: Road637
+    4300476: Road267
+    4300478: Road777
+    4300480: Road413
+    4300482: RoadJunction186
+    4300484: Building T. Alexander Pond Science And Engineering Resource Cen
+    4300486: Road494
+    4300488: Road706
+    4300490: RoadJunction77
+    4300492: Road245
+    4300494: Road582
+    4300496: RoadJunction123
+    4300498: Road211
+    4300500: RoadJunction49
+    4300502: Road244
+    4300504: BuildingEntrance132
+    4300506: Road565
+    4300508: Road286
+    4300510: Road694
+    4300512: Road528
+    4300514: Road730
+    4300516: Road727
+    4300518: Road220
+    4300520: RoadJunction56
+    4300522: Road766
+    4300524: Road740
+    4300526: RoadJunction187
+    4300528: RoadJunction105
+    4300530: RoadJunction63
+    4300532: Road717
+    4300534: Road475
+    4300536: Road703
+    4300538: SurfaceParking Lot 49
+    4300540: Road488
+    4300542: Road527
+    4300544: RoadJunction68
+    4300546: Road450
+    4300548: Road408
+    4300550: Road375
+    4300552: RoadJunction11
+    4300554: Road405
+    4300556: Road590
+    4300558: Road548
+    4300560: RoadJunction184
+    4300562: BuildingEntrance160
+    4300564: Road567
+    4300566: RoadJunction165
+    4300568: Road775
+    4300570: RoadJunction13
+    4300572: RoadJunction159
+    4300574: Road215
+    4300576: RoadJunction173
+    4300578: Road373
+    4300580: RoadJunction43
+    4300582: Road669
+    4300584: Road250
+    4300586: Road735
+    4300588: Road518
+    4300590: Road648
+    4300592: Road491
+    4300594: RoadJunction58
+    4300596: Road729
+    4300598: RoadJunction47
+    4300600: Road355
+    4300602: Road393
+    4300604: BuildingEntrance96
+    4300606: Road572
+    4300608: Building Civil & Environmental Engineering Modular Bldg
+    4300610: Road713
+    4300612: Road714
+    4300614: Road642
+    4300616: Road490
+    4300618: Road282
+    4300620: Road461
+    4300622: Road575
+    4300624: Road436
+    4300626: Building Wright Rieman Laboratories
+    4300628: Building Serin Physics Building
+    4300630: Road606
+    4300632: Road602
+    4300634: RoadJunction205
+    4300636: RoadJunction39
+    4300638: Road687
+    4300640: Road281
+    4300642: Building Smithers Hall - Center Of Alcohol Studies
+    4300644: RoadJunction150
+    4300646: RoadJunction74
+    4300648: RoadJunction176
+    4300650: Road692
+    4300652: Road781
+    4300654: RoadJunction101
+    4300656: Road591
+    4300658: Building Geological Sciences Lab Building
+    4300660: Road771
+    4300662: Road230
+    4300664: Road664
+    4300666: Road486
+    4300668: RoadJunction91
+    4300670: RoadConnector15
+    4300672: Road655
+    4300674: BuildingEntrance139
+    4300676: Road571
+    4300678: Building Electrical Engineering Building
+    4300680: Road742
+    4300682: RoadJunction88
+    4300684: Building Doolittle Building Sanford T.
+    4300686: Road232
+    4300688: BuildingEntrance144
+    4300690: Road411
+    4300692: Road584
+    4300694: Road460
+    4300696: Building Richard Weeks Hall of Engineering
+    4300698: RoadJunction138
+    4300700: Road645
+    4300702: Road277
+    4300704: RoadJunction106
+    4300706: Road431
+    4300708: Road427
+    4300710: Road751
+    4300712: Road769
+    4300714: Road372
+    4300716: RoadJunction136
+    4300718: Road560
+    4300720: RoadJunction26
+    4300722: Road471
+    4300724: Road284
+    4300726: Road262
+    4300728: Road412
+    4300730: Road370
+    4300732: Building Life Sciences Building
+    4300734: RoadJunction83
+    4300736: Road772
+    4300738: BuildingEntrance200
+    4300740: Road595
+    4300742: Road767
+    4300744: Road472
+    4300746: RoadJunction94
+    4300748: Road617
+    4300750: Building799
+    4300752: RoadJunction164
+    4300754: RoadJunction55
+    4300756: Road403
+    4300758: Building Nelson Biology Laboratories
+    4300760: Road278
+    4300762: Road574
+    4300764: Road231
+    4300766: Wall332
+    4300768: Road636
+    4300770: Road469
+    4300772: RoadJunction44
+    4300774: Road377
+    4300776: Road754
+    4300778: RoadJunction64
+    4300780: BuildingEntrance206
+    4300782: Road731
+    4300784: Road704
+    4300786: Road598
+    4300788: Road235
+    4300790: RoadJunction194
+    4300792: Road773
+    4300794: Road326
+    4300796: Road407
+    4300798: Road683
+    4300800: Road492
+    4300802: Road656
+    4300804: Road498
+    4300806: Road258
+    4300808: BuildingEntrance27
+    4300810: RoadJunction18
+    4300812: RoadJunction197
+    4300814: Road362
+    4300816: Road732
+    4300818: BuildingEntrance125
+    4300820: RoadJunction65
+    4300822: Road705
+    4300824: RoadJunction84
+    4300826: Road629
+    4300828: Road764
+    4300830: Road686
+    4300832: Road594
+    4300834: Road533
+    4300836: BuildingEntrance130
+    4300838: RoadJunction30
+    4300840: RoadJunction133
+    4300842: Road394
+    4300844: Road532
+    4300846: Road622
+    4300848: Road484
+    4300850: BuildingEntrance181
+    4300852: Road721
+    4300854: RoadJunction16
+    4300856: Road516
+    4300858: Road745
+    4300860: Road688
+    4300862: Road259
+    4300864: Road525
+    4300866: Road728
+    4300868: Road592
+    4300870: Building Solvents Building - School Of Engineering
+    4300872: Road700
+    4300874: Road755
+    4300876: BuildingEntrance126
+    4300878: Road600
+    4300880: Road760
+    4300882: Road273
+    4300884: BuildingEntrance202
+    4300886: Road476
+    4300888: Road646
+    4300890: Road430
+    4300892: RoadJunction34
+    4300894: Road578
+    4300896: Road601
+    4300898: RoadJunction22
+    4300900: Road541
+    4300902: Road515
+    4300904: Road240
+    4300906: Road635
+    4300908: Road734
+    4300910: Road599
+    4300912: Road468
+    4300914: RoadJunction116
+    4300916: Road765
+    4300918: RoadCrossingAtConnector140
+    4300920: Road462
+    4300922: RoadJunction12
+    4300924: Road271
+    4300926: RoadJunction196
+    4300928: Road275
+    4300930: BuildingEntrance157
+    4300932: Road690
+    4300934: Road222
+    4300936: Road247
+    4300938: RoadJunction109
+    4300940: BuildingEntrance143
+    4300942: Road562
+    4300944: RoadJunction178
+    4300946: Road726
+    4300948: Road701
+    4300950: Road483
+    4300952: RoadJunction37
+    4300954: RoadJunction28
+    4300956: Road741
+    4300958: Road426
+    4300960: Road689
+    4300962: SurfaceParking Lot 53
+    4300964: Road465
+    4300966: Road604
+    4300968: RoadJunction90
+    4300970: RoadJunction100
+    4300972: Building801
+    4300974: Road228
+    4300976: RoadJunction76
+    4300978: Road428
+    4300980: Building Hill Center Bldg For The Mathematical Sciences
+    4300982: Road580
+    4300984: Road715
+    4300986: RoadJunction124
+    4300988: Road513
+    4300990: Road667
+    4300992: Building Physics And Astronomy Building
+    4300994: Road512
+    4300996: RoadJunction87
+    4300998: Road564
+    4301000: RoadJunction9
+    4301002: RoadJunction166
+    4301004: Road487
+    4301006: Road561
+    4301008: Road668
+    4301010: Road753
+    4301012: BuildingEntrance131
+    4301014: Road743
+    4301016: Road783
+    4301018: Road695
+    4301020: RoadJunction54
+    4301022: Road718
+    4301024: Road272
+    4301026: Road609
+    4301028: Road425
+    4301030: Road499
+    4301032: BuildingEntrance80
+    4301034: RoadJunction14
+    4301036: Road697
+    4301038: Road756
+    4301040: Road397
+    4301042: RoadJunction42
+    4301044: Road719
+    4301046: Road274
+    4301048: Road759
+    4301050: RoadJunction46
+    4301052: Road746
+    4301054: RoadJunction33
+    4301056: Building Center For Advanced Infrastructure & Transportation
+    4301058: Road223
+    4301060: BuildingEntrance120
+    4301062: Building Fiber Optic Materials Research Building
+    4301064: Road234
+    4301066: Road312
+    4301068: Road621
+    4301070: Road391
+    4301072: Building Nanophysics Laboratory
+    4301074: Road666
+    4301076: Road681
+    4301078: Building798
+    4301080: BuildingEntrance172
+    4301082: Wall331
+    4301084: Road241
+    4301086: Road711
+    4301088: Building T. Alexander Pond Science And Engineering Resource.000
+    4301090: Building Hill Center Bldg For The Mathematical Sciences.001
+    4301092: Building Hill Center Bldg For The Mathematical Sciences.002
+    4301094: Building797.002
+    4301096: Building Hill Center Bldg For The Mathematical Sciences.004
+    4301098: Building Hill Center Bldg For The Mathematical Sciences.005
+    4301100: Building Hill Center Bldg For The Mathematical Sciences.006
+    4301102: Building Computing Research & Education Building.001
+    4301104: Building Computing Research & Education Building.002
+    4301106: Building Computing Research & Education Building.005
+    4301108: Building Computing Research & Education Building.004
+    4301110: Building Computing Research & Education Building.003
+    4301112: Building Computing Research & Education Building.008
+    4301114: Building Computing Research & Education Building.007
+    4301116: Building Computing Research & Education Building.006
+    4301118: Building Wright Rieman Laboratories.001
+    4301120: Building Life Sciences Building.001
+    4301122: Building Smithers Hall - Center Of Alcohol Studies.001
+    4301124: Building Wright Rieman Laboratories.002
+    4301126: Building Life Sciences Building.002
+    4301128: Building Smithers Hall - Center Of Alcohol Studies.002
+    4301130: Building Wright Rieman Laboratories.003
+    4301132: Building Life Sciences Building.003
+    4301134: Building Smithers Hall - Center Of Alcohol Studies.003
+    4301136: Building Wright Rieman Laboratories.004
+    4301138: Building Fiber Optic Materials Research Building.001
+    4301140: Building Mclaren Center For Ceramic Research.001
+    4301142: Building School Of Engineering Building.001
+    4301144: Building Fiber Optic Materials Research Building.002
+    4301146: Building Mclaren Center For Ceramic Research.002
+    4301148: Building Physics And Astronomy Building.001
+    4301150: Building Serin Physics Building.001
+    4301152: Building Physics And Astronomy Building.002
+    4301154: Building Serin Physics Building.002
+    4301156: Cube.001
+    4301158: Cube.002
+    4301160: Cube.003
+    4301162: Cube.004
+    4301164: Cube.005
+    4301166: Cube.006
+    4301168: Plane.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

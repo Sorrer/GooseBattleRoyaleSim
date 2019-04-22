@@ -6,6 +6,13 @@ public class GooseBehavious : MonoBehaviour {
 	public SphereCollider sC;
 	public GameObject thisChild;
 
+	public GameObject attackingEnemy = null;
+	public GameObject attackerEnemy = null;
+
+	public bool beingAttacked = false;
+	public bool attacking = true;
+	public bool attackingIsMiddle = false;
+
 	public static List<GameObject> deadList = new List<GameObject>();
 	public List<GameObject> gooseInRange = new List<GameObject>();
 
@@ -26,14 +33,20 @@ public class GooseBehavious : MonoBehaviour {
 	private bool focused = false;
 	public GameObject focusedObject = null;
 
-	private bool wander = false;
-	private Vector3 wanderLoc = Vector3.zero;
-
 	private DamageSystem enemyDS = null;
+	public GooseBehavious enemyGB = null;
+
+	public Transform centerOfRing;
+
+	private int currentGooseIndex = 0;
+
+	private bool wandering = false;
+	private Vector3 wanderLoc = Vector3.zero;
 
 	// Start is called before the first frame update
 	void Start() {
 		thisChild = gameObject.transform.GetChild(0).gameObject;
+		centerOfRing.position = new Vector3(0, transform.position.y, 0);
 	}
 
 	// Update is called once per frame
@@ -41,38 +54,30 @@ public class GooseBehavious : MonoBehaviour {
 		if (!damageSystem.IsDead) {
 			IfEnemyDead();
 
-			
-
 			if (!focused || focusedObject == null) {
 				//Debug.Log("Finding new Goose");
 				SetAttackGoose();
 
-				if((!focused || focusedObject == null) && !wander) {
-					SetWander(true);
+				if ((!focused || focusedObject == null) && !wandering) {
+					wandering = true;
 				}
 			}
 
 			if (focusedObject != null) {
-				SetWander(false);
+				wandering = false;
 				//Debug.Log(gameObject.name + "setting destination to: " + focusedObject.name);
 				navEle.thisAgent.SetDestination(focusedObject.transform.position);
 			}
 
-			if (wander) {
+			if (wandering) {
 				if (!walking) {
-					FindWanderLoc();
+					FindWanderLoc(ref wanderLoc);
 				}
 
 				navEle.thisAgent.SetDestination(wanderLoc);
 			}
 
-			float dist = Mathf.Abs((navEle.thisAgent.destination - transform.position).magnitude);
-			walking = (dist >= navEle.thisAgent.stoppingDistance);
-			attack = !walking && focused;
-			AnimationsAndActions();
-
-			
-
+			AliveAndKicking();
 		} else {
 			Kill();
 		}
@@ -83,9 +88,16 @@ public class GooseBehavious : MonoBehaviour {
 			if (enemyDS.IsDead) {
 				//Debug.Log("My " + gameObject.name + " enemy: " + focusedObject.name + " is DEAD");
 				Unfocous();
-				gooseInRange.RemoveAt(0);
+				gooseInRange.RemoveAt(currentGooseIndex);
 			}
 		}
+	}
+
+	private void AliveAndKicking() {
+		float dist = Mathf.Abs((navEle.thisAgent.destination - transform.position).magnitude);
+		walking = (dist >= navEle.thisAgent.stoppingDistance);
+		attack = !walking && (focused || !wandering);
+		AnimationsAndActions();
 	}
 
 	private void UpdateGooseInRange() {
@@ -105,41 +117,87 @@ public class GooseBehavious : MonoBehaviour {
 	}
 
 	private void GetFirstEnemy() {
-		focusedObject = gooseInRange[0];
-		if (focusedObject != null) {
-			enemyDS = focusedObject.GetComponent<GooseEntity>().damageSystem;
-			//Debug.Log("got enemy DS");
-			focused = true;
+		currentGooseIndex = 0;
+
+		for (; currentGooseIndex < gooseInRange.Count; currentGooseIndex++) {
+			focusedObject = gooseInRange[currentGooseIndex];
+			enemyGB = focusedObject.GetComponentInParent<GooseBehavious>();
+			if (focusedObject != null && CanAttack(enemyGB)) {
+				enemyDS = focusedObject.GetComponent<GooseEntity>().damageSystem;
+				enemyGB.attackerEnemy = gameObject;
+				enemyGB.beingAttacked = true;
+				attackingEnemy = focusedObject;
+				attacking = true;
+				//Debug.Log("got enemy DS");
+				focused = true;
+			}
+			if (focused) {
+				break;
+			} else {
+				enemyGB = null;
+				focusedObject = null;
+			}
 		}
 	}
 
-	private void SetWander(bool stat) {
+	private bool CanAttack(GooseBehavious toAttackGoose) {
+		if (enemyGB.beingAttacked == true && enemyGB.attacking == true) {
+			return false;
+		}
+		if (toAttackGoose.enemyGB != null) {
+			//Debug.Log("Checked enemy for being middle");
+			if (toAttackGoose.enemyGB.attacking == true && toAttackGoose.enemyGB.beingAttacked == true) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private void SetWandering(bool stat) {
 		if (stat) {
-			wander = true;
-			FindWanderLoc();
+			wandering = true;
+			wanderLoc = Vector3.zero;
 		} else {
-			wander = false;
+			wandering = false;
 
 		}
 	}
 
-	private void FindWanderLoc() {
-		GlobalGame.WanderLoc(ref wanderLoc);
+	private void FindWanderLoc(ref Vector3 wanderLoc) {
+		GlobalGame.RandomNavMeshPos(ref wanderLoc);
 
-		ConsoleLogger.debug(this.name, "Found Wander Pos " + wanderLoc);
+		//ConsoleLogger.debug(this.name, "Found Wander Pos " + wanderLoc);
 	}
 
 	private void Kill() {
+		if (enemyGB != null) {
+			enemyGB.attackingEnemy = null;
+		}
 		deadList.Add(gameObject);
 		Unfocous();
 		ragdoll.EnableRagdoll = true;
-		navEle.thisAgent.isStopped = true;
+		StopHonk();
+		biteTrigger.EnableDamage = false;
 	}
 
 	private void Unfocous() {
+		if (enemyGB != null) {
+			enemyGB.attackerEnemy = null;
+			enemyGB.beingAttacked = false;
+		}
+		attacking = false;
+
 		focused = false;
 		focusedObject = null;
+
 		enemyDS = null;
+		enemyGB = null;
+	}
+
+	private void CantAttack() {
+		if (Mathf.Abs((transform.position - centerOfRing.position).magnitude) > navEle.thisAgent.stoppingDistance) {
+			navEle.thisAgent.SetDestination(centerOfRing.position);
+		}
 	}
 
 	private void AnimationsAndActions() {
