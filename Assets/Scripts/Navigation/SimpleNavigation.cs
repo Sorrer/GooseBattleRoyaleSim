@@ -6,12 +6,12 @@ using UnityEngine.AI;
 public class SimpleNavigation : MonoBehaviour
 {
     public NavMeshAgent thisAgent;
-    public Transform player;
+
+    public bool directLook = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectsWithTag("Player")[0].transform;
     }
 
     // Update is called once per frame
@@ -19,7 +19,10 @@ public class SimpleNavigation : MonoBehaviour
     {
         if(thisAgent.destination != transform.position)
         {
-            FaceTarget(thisAgent.destination);
+            if (directLook)
+            {
+                FaceTarget(thisAgent.destination);
+            }
             thisAgent.SetDestination(thisAgent.destination);
         }
     }
@@ -29,6 +32,6 @@ public class SimpleNavigation : MonoBehaviour
         Vector3 lookPos = destination - transform.position;
         lookPos.y = 0;
         Quaternion rotation = Quaternion.LookRotation(lookPos);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 20);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 30 * Time.deltaTime);
     }
 }

@@ -25,7 +25,7 @@ public class PlayerMain : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-		GlobalGame.Player = this;
+		GlobalGame.playerMain = this;
 		setBaseComponents();
 		//ani = this.GetComponent<Animator>();
 	}
@@ -46,7 +46,7 @@ public class PlayerMain : MonoBehaviour
 
 					controlPlayer.enabled = true;
 					Vector3 pos = GooseBody.transform.position;
-					print(pos);
+					//print(pos);
 					pos.y = 1.105f;
 					controlPlayer.playerController.enabled = false;
 					this.transform.position = pos;

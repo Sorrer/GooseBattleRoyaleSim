@@ -23,7 +23,7 @@ public class ThankBusDriver : MonoBehaviour
 				Destroy(this);
 			}
 
-			if (GlobalGame.Player.falling) {
+			if (GlobalGame.playerMain.falling) {
 				GlobalGame.eventText.ApplyText("Didnt thank the bus driver. (-1 Kill)", 5);
 				GameStats.Kills--;
 				DroppingText.text = "";
