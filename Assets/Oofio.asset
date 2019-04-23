@@ -15,7 +15,7 @@ MonoBehaviour:
   settings:
   - {fileID: 114196364492417404}
   - {fileID: 114217605232117494}
-  - {fileID: 114821714832825220}
+  - {fileID: 114996327043097264}
 --- !u!114 &114196364492417404
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1430,6 +1430,31 @@ MonoBehaviour:
   DOWNcolor:
     overrideState: 1
     value: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 0}
+--- !u!114 &114996327043097264
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Grayscale
+  m_EditorClassIdentifier: Assembly-CSharp::Grayscale
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 0
+  blend:
+    overrideState: 1
+    value: 0.176
+  UPcolor:
+    overrideState: 1
+    value: {r: 0.735849, g: 0.21656562, b: 0.21173012, a: 0}
+  DOWNcolor:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &114998252358862096
 MonoBehaviour:
   m_ObjectHideFlags: 3
