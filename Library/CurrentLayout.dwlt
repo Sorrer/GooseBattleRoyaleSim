@@ -42,10 +42,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
+    width: 1366
+    height: 635
+  m_MinSize: {x: 679, y: 498}
+  m_MaxSize: {x: 14002, y: 14048}
+=======
     width: 1920
     height: 947
   m_MinSize: {x: 683, y: 348}
   m_MaxSize: {x: 12008, y: 8048}
+>>>>>>> GooseEnv
   vertical: 0
   controlID: 14
 --- !u!114 &3
@@ -70,6 +77,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
+>>>>>>> GooseEnv
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -96,6 +104,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
+>>>>>>> GooseEnv
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -128,6 +137,7 @@ MonoBehaviour:
   - {fileID: 12}
   m_Selected: 1
   m_LastSelected: 0
+>>>>>>> GooseEnv
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,6 +228,7 @@ MonoBehaviour:
     height: 947
   m_MinSize: {x: 406, y: 348}
   m_MaxSize: {x: 8006, y: 8048}
+>>>>>>> GooseEnv
   vertical: 1
   controlID: 15
 --- !u!114 &10
@@ -243,6 +254,7 @@ MonoBehaviour:
     height: 683
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
+>>>>>>> GooseEnv
   vertical: 0
   controlID: 16
 --- !u!114 &11
@@ -809,6 +821,7 @@ MonoBehaviour:
     m_LastClickedInstanceID: 15942
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
+>>>>>>> GooseEnv
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -824,7 +837,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -834,8 +847,13 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
+<<<<<<< HEAD
+  m_DirectoriesAreaWidth: 176
+--- !u!114 &14
+=======
   m_DirectoriesAreaWidth: 115
 --- !u!114 &15
+>>>>>>> GooseEnv
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -860,6 +878,7 @@ MonoBehaviour:
     y: 73
     width: 388
     height: 927
+>>>>>>> GooseEnv
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 

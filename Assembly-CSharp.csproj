@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\UI\KillCount.cs" />
     <Compile Include="Assets\Scripts\UI\ThankBusDriver.cs" />
+    <Compile Include="Assets\Sounds\Scripts\AmbientSound.cs" />
     <Compile Include="Assets\Sounds\Scripts\HonkSoundEmitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
