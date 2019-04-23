@@ -9,15 +9,18 @@ public class GooseBehavious : MonoBehaviour {
 
 	public GameObject player;
 
-	public GameObject attackingEnemy = null;
-	public GameObject attackerEnemy = null;
-
-	public bool beingAttacked = false;
-	public bool attacking = true;
-	public bool attackingIsMiddle = false;
+    [HideInInspector]
+    public GameObject attackingEnemy = null;
+    [HideInInspector]
+    public GameObject attackerEnemy = null;
+    [HideInInspector]
+    public bool beingAttacked = false;
+    [HideInInspector]
+    public bool attacking = true;
 
 	public static List<GameObject> deadList = new List<GameObject>();
-	public List<GameObject> gooseInRange = new List<GameObject>();
+    [HideInInspector]
+    public List<GameObject> gooseInRange = new List<GameObject>();
 
 	public Animator ani;
 
@@ -27,17 +30,21 @@ public class GooseBehavious : MonoBehaviour {
 	public DamageTrigger biteTrigger;
 	public GooseHonkSphereEmitter honkEmitter;
 
-	public bool walking = false;
+    [HideInInspector]
+    public bool walking = false;
 	private bool attack = false;
 
 	private float timer = 1;
 	private float stopHonkTime = 0;
 
 	private bool focused = false;
-	public GameObject focusedObject = null;
+    [HideInInspector]
+    public GameObject focusedObject = null;
 
+    [HideInInspector]
 	public DamageSystem enemyDS = null;
-	public GooseBehavious enemyGB = null;
+    [HideInInspector]
+    public GooseBehavious enemyGB = null;
 
 	private int currentGooseIndex = 0;
 
@@ -61,9 +68,14 @@ public class GooseBehavious : MonoBehaviour {
     public float regenTickGap = 10.0f;
     public float regenAmount = 2.0f;
     private float nextRegenTime = 0;
-    
-	// Start is called before the first frame update
-	void Start() {
+
+    public Light gooseStateLight;
+    private Color wanderColour = new Color(79, 255, 71);
+    private Color attackingColour = new Color(255, 21, 4);
+    private Color deadColour = new Color(20, 20, 20);
+
+    // Start is called before the first frame update
+    void Start() {
 		orgDamageHonk = honkEmitter.SphereDamage;
 		orgDamageBite = biteTrigger.Amount;
         thisChild = gameObject.transform.GetChild(0).gameObject;
@@ -76,6 +88,11 @@ public class GooseBehavious : MonoBehaviour {
 	void Update() {
 
         HandleSearchRadius();
+
+        if (!attacking)
+        {
+            attackingEnemy = null;
+        }
 
         if (!damageSystem.IsDead) {
 
@@ -107,7 +124,9 @@ public class GooseBehavious : MonoBehaviour {
             //I SHALL DIE
 			Kill();
 		}
-	}
+
+        UpdateLights();
+    }
 
     private void LookEnemyInTheEYE()
     {
@@ -198,7 +217,7 @@ public class GooseBehavious : MonoBehaviour {
 	}
 
 	private void SetAttackGoose() {
-		UpdateGooseInRange();
+		//UpdateGooseInRange();
 		if (gooseInRange.Count > 0 && (!focused || focusedObject == null)) {
 			GetFirstEnemy();
 			//Debug.Log(gooseInRange[randIndex].transform.position);
@@ -287,10 +306,11 @@ public class GooseBehavious : MonoBehaviour {
 	}
 
 	private bool CanAttack(GooseBehavious toAttackGoose) {
+        if (toAttackGoose.damageSystem.IsDead)
+        {
+            return false;
+        }
 		if (enemyGB != null) {
-			if (enemyGB.beingAttacked == true && enemyGB.attacking == true) {
-				return false;
-			}
 			if (toAttackGoose.enemyGB != null) {
 				//Debug.Log("Checked enemy for being middle");
 				if (toAttackGoose.enemyGB.attacking == true && toAttackGoose.enemyGB.beingAttacked == true) {
@@ -434,6 +454,25 @@ public class GooseBehavious : MonoBehaviour {
 		Attack();
 	}
 
+    private void UpdateLights()
+    {
+        if(gooseStateLight != null)
+        {
+            if (wandering)
+            {
+                gooseStateLight.color = wanderColour;
+            }
+            else if (attacking)
+            {
+                gooseStateLight.color = attackingColour;
+            }
+            else if (damageSystem.IsDead)
+            {
+                gooseStateLight.color = deadColour;
+            }
+        }
+    }
+
 	private void WalkAnim() {
 		ani.SetBool("Walking", walking);
 	}
@@ -502,10 +541,19 @@ public class GooseBehavious : MonoBehaviour {
 
 	private void OnTriggerExit(Collider other) {
 		if (gooseInRange.Contains(other.gameObject)) {
-			gooseInRange.Remove(other.gameObject);
-			if (focusedObject == other.gameObject) {
-				focused = false;
-			}
-		}
+            if (focusedObject == other.gameObject)
+            {
+                int randFollowChance = Random.Range(0, 3);
+                if (randFollowChance <= 1)
+                {
+                    gooseInRange.Remove(other.gameObject);
+                    Unfocous();
+                }
+            }
+            else
+            {
+                gooseInRange.Remove(other.gameObject);
+            }
+        }
 	}
 }
