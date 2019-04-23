@@ -35,10 +35,47 @@ public class GlobalGame : MonoBehaviour
 
     }
 
+	bool gameDone = false;
+
     // Update is called once per frame
     void Update()
     {
-        
+
+		if (gameDone) {
+		} else {
+			//Check if game is over
+			bool foundAlive = false;
+			foreach (Entity e in MapManager.GetMap(GameConfig.MAP_GEESE).Entities.Values) {
+				if (e.EntityID.Equals("Goose") ){
+					GooseEntity goose = (GooseEntity)e;
+
+					if(goose == null) {
+						MapManager.RemoveEntity(GameConfig.MAP_GEESE, e);
+						continue;
+					}
+
+					if(goose.transform.parent == playerMain.transform) {
+						continue;
+					}
+
+					if (goose.damageSystem != null) {
+						if (!goose.damageSystem.IsDead) {
+							foundAlive = true;
+						}
+					}
+
+				}
+			}
+
+			if (!foundAlive) {
+				//End game
+				gameDone = true;
+				eventText.ApplyText("Winner Winner Goose Dinner", 10);
+				ConsoleLogger.debug("GlobalGame", "Winner");
+
+			}
+		}
+
     }
 
 	public static bool RandomNavMeshPos(ref Vector3 pos) {

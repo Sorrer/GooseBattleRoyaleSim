@@ -9,7 +9,7 @@ public class GooseEntity : Entity
     // Start is called before the first frame update
     void Start()
     {
-		if(this.EntityID == "Goose") {
+		if(this.EntityID.Equals("Goose")) {
 			GlobalGame.MapManager.AddEntity(GameConfig.MAP_GEESE, this);
 		}
 
