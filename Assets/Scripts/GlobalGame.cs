@@ -8,7 +8,7 @@ public class GlobalGame : MonoBehaviour
 
 	public static bool Paused = false;
 	public static bool EnableEdgeScroll = false;
-	public static PlayerMain Player;
+	public static PlayerMain playerMain;
 	public static GameMapManager MapManager;
 
 	public static bool ForceDrop = false;
@@ -19,6 +19,9 @@ public class GlobalGame : MonoBehaviour
 
 	public static float CircleDamage = 5;
 	public static float CircleDamageTick = 1;
+
+    public static int TotalNumSegments = 0;
+    public static float CurrentCircleNum = 1;
 
 	public Transform centerPos;
 	public float radiPos;

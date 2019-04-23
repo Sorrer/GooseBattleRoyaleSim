@@ -22,6 +22,7 @@ public class CircleManager : MonoBehaviour
 
     void Start()
     {
+        GlobalGame.TotalNumSegments = circleSegment.Count;
 		waitingToClose = true;
 		segmentTimer = new Timer(circleSegment[0].SecondsTillClose);
 		segmentTimer.Start();
@@ -56,19 +57,20 @@ public class CircleManager : MonoBehaviour
 
 			if (segmentTimer.IsDone()) {
 
-				print(segmentTimer.IsDone() + " " + segmentTimer.countTo);
+				//print(segmentTimer.IsDone() + " " + segmentTimer.countTo);
 
 				 newScaleX = ((curSegment.CloseRadiTo) * maxScale.x) / maxRadi;
 
 				Circle.localScale = new Vector3(newScaleX, newScaleX, maxScale.z);
 
 				GlobalGame.CircleRadius = curSegment.CloseRadiTo;
-				print(curSegment.CloseRadiTo);
+				//print(curSegment.CloseRadiTo);
 
 
 				circleSegment.RemoveAt(0);
 				if (circleSegment.Count == 0) return;
 				curSegment = circleSegment[0];
+                GlobalGame.CurrentCircleNum++;
 
 				GlobalGame.CircleDamage = curSegment.CircleDamage;
 				GlobalGame.CircleDamageTick = curSegment.CircleDamageTick;
