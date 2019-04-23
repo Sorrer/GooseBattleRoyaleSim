@@ -51,6 +51,10 @@ public class GooseBehavious : MonoBehaviour {
 		thisChild = gameObject.transform.GetChild(0).gameObject;
 		playerM = GlobalGame.Player;
 		player = playerM.gameObject;
+
+
+		orgDamageHonk = honkEmitter.SphereDamage;
+		orgDamageBite = biteTrigger.Amount;
 	}
 
 	// Update is called once per frame
@@ -147,6 +151,8 @@ public class GooseBehavious : MonoBehaviour {
 		}
 	}
 
+	float orgDamageHonk = 0, orgDamageBite = 0;
+
 	private void GetFirstEnemy() {
 		currentGooseIndex = 0;
 
@@ -165,7 +171,13 @@ public class GooseBehavious : MonoBehaviour {
 					//Debug.Log("got enemy DS");
 					focused = true;
 					navEle.thisAgent.speed = 3.5f;
+					ani.SetFloat("WalkSpeed", 1f);
 
+					orgDamageHonk = honkEmitter.SphereDamage;
+					orgDamageBite = biteTrigger.Amount;
+
+					honkEmitter.SphereDamage = 0.1f + (Random.value * 2);
+					biteTrigger.Amount = 0.1f + (Random.value * 2);
 				}
 			} else {
 				if (focusedObject != null) {
@@ -175,6 +187,12 @@ public class GooseBehavious : MonoBehaviour {
 					//Debug.Log("got enemy DS");
 					focused = true;
 					navEle.thisAgent.speed = 3.5f;
+					ani.SetFloat("WalkSpeed", 1f);
+
+					orgDamageHonk = honkEmitter.SphereDamage;
+					orgDamageBite = biteTrigger.Amount;
+
+
 				}
 			}
 
@@ -244,9 +262,15 @@ public class GooseBehavious : MonoBehaviour {
 		}
 		attacking = false;
 
-		navEle.thisAgent.speed = 1.25f;
+		navEle.thisAgent.speed = 1f;
+		ani.SetFloat("WalkSpeed", 0.35f);
 		focused = false;
 		focusedObject = null;
+
+
+		honkEmitter.SphereDamage = orgDamageHonk;
+		biteTrigger.Amount = orgDamageBite ;
+
 
 		enemyDS = null;
 		enemyGB = null;
@@ -266,6 +290,12 @@ public class GooseBehavious : MonoBehaviour {
 			enemyDS = enemyGB.damageSystem;
 			focused = true;
 			attacking = true;
+
+			orgDamageHonk = honkEmitter.SphereDamage;
+			orgDamageBite = biteTrigger.Amount;
+
+			honkEmitter.SphereDamage = 0.1f + (Random.value * 0.5f);
+			biteTrigger.Amount = 0.1f + (Random.value * 1f);
 		}
 	}
 

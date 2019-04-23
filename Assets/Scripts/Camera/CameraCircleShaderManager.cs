@@ -8,7 +8,7 @@ public class CameraCircleShaderManager : MonoBehaviour
 	public Transform CameraPos;
 
 	public PostProcessProfile profile;
-
+	public float padding;
 	// Update is called once per frame
 	void Update()
     {
@@ -20,7 +20,7 @@ public class CameraCircleShaderManager : MonoBehaviour
 		}
 
 
-		if (Vector3.Distance(CameraPos.position, GlobalGame.CircleCenter) >= GlobalGame.CircleRadius) {
+		if (Vector2.Distance(new Vector2(CameraPos.position.x, CameraPos.position.z), new Vector2(GlobalGame.CircleCenter.x, GlobalGame.CircleCenter.z)) - padding >= GlobalGame.CircleRadius) {
 
 			effect.enabled.value = true;
 

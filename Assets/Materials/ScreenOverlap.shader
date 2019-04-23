@@ -16,6 +16,10 @@
             float4 scenePixel =  SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord);
 				float average = (scenePixel.r + scenePixel.g + scenePixel.b) / 3;
 
+				if(scenePixel.a == 0){
+					return scenePixel;
+				}
+
 				
 				if(average > _FlipMidpoint){
 					return _FlipDownColor;			

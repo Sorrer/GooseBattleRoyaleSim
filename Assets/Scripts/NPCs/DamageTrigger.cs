@@ -10,7 +10,7 @@ public class DamageTrigger : MonoBehaviour
 	public DamageSystem self;
 	public bool EnableDamage = false;
 	[SerializeField]
-	private float Amount = 0;
+	public float Amount = 0;
 
 	List<DamageSystem> currentlyDamaged = new List<DamageSystem>();
 
