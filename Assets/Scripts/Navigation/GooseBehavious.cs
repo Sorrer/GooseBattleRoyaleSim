@@ -31,12 +31,12 @@ public class GooseBehavious : MonoBehaviour {
 	private bool attack = false;
 
 	private float timer = 1;
-	private float currentTime = 0;
+	private float stopHonkTime = 0;
 
 	private bool focused = false;
 	public GameObject focusedObject = null;
 
-	private DamageSystem enemyDS = null;
+	public DamageSystem enemyDS = null;
 	public GooseBehavious enemyGB = null;
 
 	private int currentGooseIndex = 0;
@@ -54,9 +54,14 @@ public class GooseBehavious : MonoBehaviour {
     private float fixBias = 1.0f;
 
     public float defaultSearchRadius = 3.0f;
+    public float finalSearchRadius = 10.0f;
     private float[] searchRadiuses;
     private bool searchRadiuiiAssigned = false;
 
+    public float regenTickGap = 10.0f;
+    public float regenAmount = 2.0f;
+    private float nextRegenTime = 0;
+    
 	// Start is called before the first frame update
 	void Start() {
 		orgDamageHonk = honkEmitter.SphereDamage;
@@ -73,41 +78,33 @@ public class GooseBehavious : MonoBehaviour {
         HandleSearchRadius();
 
         if (!damageSystem.IsDead) {
+
+            //BUNCH OF CHECKS TO AVOID TROUBLE
             LookEnemyInTheEYE();
 			IfEnemyDead();
 			BeingAttacked();
             FixStutter();
-			if (!focused || focusedObject == null) {
-				//Debug.Log("Finding new Goose");
-				SetAttackGoose();
 
-				if ((!focused || focusedObject == null) && !wandering) {
-					wandering = true;
-				}
-			}
+            //FINDING AND MOVING TO ENEMY IF AVAILABLE
+            FindMoveAttEne();
 
-			if (focusedObject != null) {
-				wandering = false;
-				//Debug.Log(gameObject.name + "setting destination to: " + focusedObject.name);
-				navEle.thisAgent.SetDestination(focusedObject.transform.position);
-			}
-
+            //SAVING ONE SELF TAKES PRECEDENCE OVER TAKING A LIFE
 			SaveFromRing();
 
-			if (wandering) {
-				StopAttackGlitch();
-				if (!walking
-                    || Vector3.Distance(this.transform.position, this.navEle.thisAgent.destination) < this.navEle.thisAgent.stoppingDistance
-                    || Vector3.Distance(this.navEle.thisAgent.destination, GlobalGame.CircleCenter) > GlobalGame.CircleRadius) {
-					FindWanderLoc(ref wanderLoc);
-				}
+            //BORING LIFE
+            Wander();
 
-				navEle.thisAgent.SetDestination(wanderLoc);
-			}
+            //YAAYY I'M GOD
+            if(wandering || !beingAttacked)
+            {
+                GiveLife();
+            }
 
+            //LETS JUST DO WHAT WE HAVE TO DO
 			AliveAndKicking();
 
 		} else {
+            //I SHALL DIE
 			Kill();
 		}
 	}
@@ -133,7 +130,7 @@ public class GooseBehavious : MonoBehaviour {
                 searchRadiuses[i] = defaultSearchRadius;
                 if (i == searchRadiuses.Length - 1)
                 {
-                    searchRadiuses[i] = 10;
+                    searchRadiuses[i] = finalSearchRadius;
                 }
             }
         }
@@ -149,6 +146,10 @@ public class GooseBehavious : MonoBehaviour {
     }
 
 	private void IfEnemyDead() {
+        if(attackingEnemy == null)
+        {
+            attacking = false;
+        }
 		if (isAttackingPlayer) {
 			if (playerMainScript.damageSystem.IsDead) {
 				isAttackingPlayer = false;
@@ -204,6 +205,27 @@ public class GooseBehavious : MonoBehaviour {
 		}
 	}
 
+    private void FindMoveAttEne()
+    {
+        if (!focused || focusedObject == null)
+        {
+            //Debug.Log("Finding new Goose");
+            SetAttackGoose();
+
+            if ((!focused || focusedObject == null) && !wandering)
+            {
+                wandering = true;
+            }
+        }
+
+        if (focusedObject != null)
+        {
+            wandering = false;
+            //Debug.Log(gameObject.name + "setting destination to: " + focusedObject.name);
+            navEle.thisAgent.SetDestination(focusedObject.transform.position);
+        }
+    }
+
 	float orgDamageHonk = 0, orgDamageBite = 0;
 
 	private void GetFirstEnemy() {
@@ -229,9 +251,17 @@ public class GooseBehavious : MonoBehaviour {
 					orgDamageHonk = honkEmitter.SphereDamage;
 					orgDamageBite = biteTrigger.Amount;
 
-					honkEmitter.SphereDamage = 0.1f + (Random.value * 2);
-					biteTrigger.Amount = 0.1f + (Random.value * 2);
-				}
+                    if(GlobalGame.CurrentCircleNum != GlobalGame.TotalNumSegments)
+                    {
+                        honkEmitter.SphereDamage = 0.1f + (Random.value * 2);
+                        biteTrigger.Amount = 0.1f + (Random.value * 2);
+                    }
+                    else
+                    {
+                        orgDamageHonk = honkEmitter.SphereDamage;
+                        orgDamageBite = biteTrigger.Amount;
+                    }
+                }
 			} else {
 				if (focusedObject != null) {
 					isAttackingPlayer = true;
@@ -244,8 +274,6 @@ public class GooseBehavious : MonoBehaviour {
 
 					orgDamageHonk = honkEmitter.SphereDamage;
 					orgDamageBite = biteTrigger.Amount;
-
-
 				}
 			}
 
@@ -269,19 +297,23 @@ public class GooseBehavious : MonoBehaviour {
 					return false;
 				}
 			}
+            if (!toAttackGoose.CanIBeAttacked())
+            {
+                return false;
+            }
+            
 		}
 		return true;
 	}
 
-	private void SetWandering(bool stat) {
-		if (stat) {
-			wandering = true;
-			wanderLoc = Vector3.zero;
-		} else {
-			wandering = false;
-
-		}
-	}
+    public bool CanIBeAttacked()
+    {
+        if (damageSystem.IsDead)
+        {
+            return false;
+        }
+        return true;
+    }
 
 	private void FindWanderLoc(ref Vector3 wanderLoc) {
 		GlobalGame.RandomNavMeshPos(ref wanderLoc);
@@ -289,11 +321,36 @@ public class GooseBehavious : MonoBehaviour {
 		//ConsoleLogger.debug(this.name, "Found Wander Pos " + wanderLoc);
 	}
 
+    private void Wander()
+    {
+        if (wandering)
+        {
+            StopAttackGlitch();
+            if (!walking
+                || Vector3.Distance(this.transform.position, this.navEle.thisAgent.destination) < this.navEle.thisAgent.stoppingDistance
+                || Vector3.Distance(this.navEle.thisAgent.destination, GlobalGame.CircleCenter) > GlobalGame.CircleRadius)
+            {
+                FindWanderLoc(ref wanderLoc);
+            }
+
+            navEle.thisAgent.SetDestination(wanderLoc);
+        }
+    }
+
 	private void SaveFromRing() {
 		if (Mathf.Abs((transform.position - GlobalGame.CircleCenter).magnitude) > GlobalGame.CircleRadius) {
 			wandering = true;
 		}
 	}
+
+    private void GiveLife()
+    {
+        if(nextRegenTime < Time.time)
+        {
+            damageSystem.ApplyRegen(regenAmount);
+            nextRegenTime = Time.time + regenTickGap;
+        }
+    }
 
 	private void Kill() {
 		if (enemyGB != null) {
@@ -312,7 +369,11 @@ public class GooseBehavious : MonoBehaviour {
 				enemyGB.attackerEnemy = null;
 				enemyGB.beingAttacked = false;
 			}
-		}
+        }
+        else
+        {
+            isAttackingPlayer = false;
+        }
 		attacking = false;
 
 		navEle.thisAgent.speed = 1f;
@@ -382,15 +443,20 @@ public class GooseBehavious : MonoBehaviour {
 		if (focused) {
 			bool honk = false;
 			bool isBiing = ani.GetCurrentAnimatorStateInfo(1).IsName("Bite");
-			if (currentTime < Time.time && !isBiing && finishedBiting) {
+			if (stopHonkTime < Time.time && !isBiing && finishedBiting) {
 				int randHonkChance = Random.Range(1, 12);
-				honk = randHonkChance > 10;
+				honk = randHonkChance > 6;
 			}
+            float realDiff = Mathf.Abs((transform.position - navEle.thisAgent.destination).magnitude);
+            if (realDiff > navEle.thisAgent.stoppingDistance)
+            {
+                honk = true;
+            }
 			//Control Attacks
 
 			//Bite
 			if (attack) {
-				if (!honk && currentTime < Time.time) {
+				if (!honk && stopHonkTime < Time.time) {
 					StopHonk();
 					if (!ani.GetCurrentAnimatorStateInfo(1).IsName("Bite")) {
 						ani.ResetTrigger("Bite");
@@ -405,13 +471,11 @@ public class GooseBehavious : MonoBehaviour {
 						ani.ResetTrigger("Bite");
 						finishedBiting = true;
 					}
-				} else if (!honkEmitter.Emit && honk && !isBiing) {
+				}else if (!honkEmitter.Emit && honk && !isBiing) {
 					ani.SetBool("HONK", true);
-
-
 					honkEmitter.StartEmit();
-					currentTime = Time.time + 0.5f;
-				} else if (honk && currentTime < Time.time && !isBiing) {
+					stopHonkTime = Time.time + 0.35f;
+				} else if (honk && stopHonkTime < Time.time && !isBiing) {
 					StopHonk();
 				}
 			}

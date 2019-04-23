@@ -9,7 +9,14 @@ public class DamageSystem : MonoBehaviour
 	public bool IsDead = false;
 	Timer timer = null;
 
-	private void Update() {
+    private float origHP;
+
+    private void Awake()
+    {
+        origHP = HP;
+    }
+
+    private void Update() {
 		if (IsDead) return;
 
 		if (Vector3.Distance(this.transform.position, GlobalGame.CircleCenter) > GlobalGame.CircleRadius) {
@@ -37,4 +44,12 @@ public class DamageSystem : MonoBehaviour
 		}
 	}
 	
+    public void ApplyRegen(float amount)
+    {
+        if(origHP > HP)
+        {
+            HP += amount;
+            if (HP > origHP) HP = origHP;
+        }
+    }
 }
