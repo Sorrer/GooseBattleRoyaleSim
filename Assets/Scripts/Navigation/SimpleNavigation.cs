@@ -7,6 +7,7 @@ public class SimpleNavigation : MonoBehaviour
 {
     public NavMeshAgent thisAgent;
 
+    [HideInInspector]
     public bool directLook = false;
 
     // Start is called before the first frame update
