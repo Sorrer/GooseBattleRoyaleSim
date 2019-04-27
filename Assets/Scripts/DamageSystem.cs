@@ -9,7 +9,10 @@ public class DamageSystem : MonoBehaviour
 	public bool IsDead = false;
 	Timer timer = null;
 
-    private float origHP;
+	public AudioSource hurtSound;
+	public AudioSource deathSound;
+
+	private float origHP;
 
     private void Awake()
     {
@@ -41,6 +44,12 @@ public class DamageSystem : MonoBehaviour
 
 		if(HP <= 0) {
 			IsDead = true;
+			if (!deathSound.isPlaying)
+				deathSound.Play();
+		} else {
+
+			if(!hurtSound.isPlaying)
+			hurtSound.Play();
 		}
 	}
 	

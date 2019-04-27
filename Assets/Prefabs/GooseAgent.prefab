@@ -134,8 +134,8 @@ MonoBehaviour:
   walkCheckTSpan: 1
   defaultSearchRadius: 3
   finalSearchRadius: 10
-  regenTickGap: 3
-  regenAmount: 2
+  regenTickGap: 2
+  regenAmount: 3
   gooseStateLight: {fileID: 8753882595097963788}
 --- !u!1001 &2873014981201711693
 PrefabInstance:
@@ -144,11 +144,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2873014980332272291}
     m_Modifications:
-    - target: {fileID: 4602732588853132894, guid: bf692617a0c48b84fa54eadd1f7320c3,
-        type: 3}
-      propertyPath: m_Name
-      value: GooseRagdoll
-      objectReference: {fileID: 0}
     - target: {fileID: 4602732588853092990, guid: bf692617a0c48b84fa54eadd1f7320c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -203,6 +198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602732588853132894, guid: bf692617a0c48b84fa54eadd1f7320c3,
+        type: 3}
+      propertyPath: m_Name
+      value: GooseRagdoll
       objectReference: {fileID: 0}
     - target: {fileID: 4602732588496452982, guid: bf692617a0c48b84fa54eadd1f7320c3,
         type: 3}

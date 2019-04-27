@@ -16,7 +16,7 @@ public class ThankBusDriver : MonoBehaviour
 
 		if(textTimer == null) {
 			if (Input.GetKeyDown(KeyCode.B)) {
-				GlobalGame.eventText.ApplyText("You thanked bus driver. Nice. (+10 Kills)", 4);
+				GlobalGame.eventText.PriorityTextMajor("You thanked bus driver. Nice. (+10 Kills)", 4);
 				GameStats.ThankedBusDriver = true;
 				GameStats.Kills += 10;
 				DroppingText.text = "";

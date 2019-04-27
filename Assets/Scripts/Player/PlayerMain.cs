@@ -86,7 +86,7 @@ public class PlayerMain : MonoBehaviour
 			} else if(deathTimer.IsDone()){
 				deathTimer = null;
 				ragdoll.EnableRagdoll = false;
-				damageSystem.HP = 101;
+				damageSystem.ApplyRegen(100);
 				damageSystem.IsDead = false;
 
 				controlPlayer.enabled = true;

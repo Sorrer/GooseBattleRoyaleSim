@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GlobalGame : MonoBehaviour
 {
@@ -26,6 +28,12 @@ public class GlobalGame : MonoBehaviour
 	public Transform centerPos;
 	public float radiPos;
 	public static EventText eventText;
+	public TextMeshProUGUI RemainingText;
+
+	public AudioSource winningSound;
+
+
+	public bool WinnerWinnerGooseDinner = false;
 
 	void Start()
     {
@@ -42,16 +50,29 @@ public class GlobalGame : MonoBehaviour
     {
 
 		if (gameDone) {
+			if (WinnerWinnerGooseDinner) {
+				if (!eventText.textEle.text.Equals("Winner Winner Goose Dinner")) {
+					print("Why no switch");
+					SceneManager.LoadScene("Winner");
+				}
+			}
 		} else {
 			//Check if game is over
 			bool foundAlive = false;
+
+			bool change = true;
+
+			int aliveGeese = 1;
+
 			foreach (Entity e in MapManager.GetMap(GameConfig.MAP_GEESE).Entities.Values) {
 				if (e.EntityID.Equals("Goose") ){
 					GooseEntity goose = (GooseEntity)e;
 
 					if(goose == null) {
 						MapManager.RemoveEntity(GameConfig.MAP_GEESE, e);
-						continue;
+						foundAlive = true;
+						change = false;
+						break;
 					}
 
 					if(goose.transform.parent == playerMain.transform) {
@@ -61,19 +82,28 @@ public class GlobalGame : MonoBehaviour
 					if (goose.damageSystem != null) {
 						if (!goose.damageSystem.IsDead) {
 							foundAlive = true;
+							aliveGeese++;
 						}
 					}
 
 				}
 			}
 
+			if (change) {
+				RemainingText.text = aliveGeese + "";
+			}
+
 			if (!foundAlive) {
 				//End game
 				gameDone = true;
-				eventText.ApplyText("Winner Winner Goose Dinner", 10);
+				eventText.PriorityTextMajor("Winner Winner Goose Dinner", 10);
 				ConsoleLogger.debug("GlobalGame", "Winner");
-
+				winningSound.Play();
+				WinnerWinnerGooseDinner = true;
 			}
+
+			
+
 		}
 
     }

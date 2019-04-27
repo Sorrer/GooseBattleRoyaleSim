@@ -270,10 +270,10 @@ public class GooseBehavious : MonoBehaviour {
 					orgDamageHonk = honkEmitter.SphereDamage;
 					orgDamageBite = biteTrigger.Amount;
 
-                    if(GlobalGame.CurrentCircleNum != GlobalGame.TotalNumSegments)
+                    if(GlobalGame.CurrentCircleNum + 1 < GlobalGame.TotalNumSegments)
                     {
-                        honkEmitter.SphereDamage = 0.1f + (Random.value * 2);
-                        biteTrigger.Amount = 0.1f + (Random.value * 2);
+                        honkEmitter.SphereDamage = 0.1f;
+                        biteTrigger.Amount = 0.1f;
                     }
                     else
                     {
@@ -288,7 +288,7 @@ public class GooseBehavious : MonoBehaviour {
 					attacking = true;
 					//Debug.Log("got enemy DS");
 					focused = true;
-					navEle.thisAgent.speed = 3.5f;
+					navEle.thisAgent.speed = 4f;
 					ani.SetFloat("WalkSpeed", 1f);
 
 					orgDamageHonk = honkEmitter.SphereDamage;
@@ -365,8 +365,13 @@ public class GooseBehavious : MonoBehaviour {
 
     private void GiveLife()
     {
+		if(GlobalGame.CurrentCircleNum == GlobalGame.TotalNumSegments) {
+			return;
+		}
+
         if(nextRegenTime < Time.time)
         {
+
             damageSystem.ApplyRegen(regenAmount);
             nextRegenTime = Time.time + regenTickGap;
         }

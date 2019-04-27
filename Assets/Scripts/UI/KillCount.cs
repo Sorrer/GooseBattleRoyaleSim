@@ -15,7 +15,13 @@ public class KillCount : MonoBehaviour
 		text.text = "Killed: " + GameStats.Kills;        
 
 		if(GameStats.Kills > lastKills) {
-			GlobalGame.eventText.ApplyText("You are the new kill leader - " + GameStats.Kills + " kills", 2);
+
+			if(GameStats.Kills < 2) {
+				GlobalGame.eventText.ApplyText("You are the new kill leader with " + GameStats.Kills + " kill", 2);
+			} else {
+				GlobalGame.eventText.ApplyText("You are the new kill leader with " + GameStats.Kills + " kills", 2);
+			}
+			
 		}
 
 		

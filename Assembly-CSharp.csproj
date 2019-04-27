@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Resources\CameraScreenShadingEffect.cs" />
     <Compile Include="Assets\Scripts\AttachTransform.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraCircleShaderManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\Camera\CameraScreenShadingEffect.cs" />
     <Compile Include="Assets\Scripts\CircleManager.cs" />
     <Compile Include="Assets\Scripts\ConsoleLogger.cs" />
     <Compile Include="Assets\Scripts\DamageSystem.cs" />
@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\GameStats.cs" />
     <Compile Include="Assets\Scripts\GlobalGame.cs" />
     <Compile Include="Assets\Scripts\GooseSpawn.cs" />
+    <Compile Include="Assets\Scripts\Misc\RotateObject.cs" />
     <Compile Include="Assets\Scripts\Navigation\GooseBehavious.cs" />
     <Compile Include="Assets\Scripts\Navigation\SimpleNavigation.cs" />
     <Compile Include="Assets\Scripts\NPCs\Bus\BusMove.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\UI\EventText.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\IntroduceStats.cs" />
     <Compile Include="Assets\Scripts\UI\KillCount.cs" />
     <Compile Include="Assets\Scripts\UI\ThankBusDriver.cs" />
     <Compile Include="Assets\Sounds\Scripts\AmbientSound.cs" />
@@ -129,7 +131,7 @@
     <None Include="Assets\Materials\UnlitShadow.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Materials\ScreenOverlap.shader" />
+    <None Include="Assets\Resources\ScreenOverlap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Font\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -144,6 +146,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Materials\RecievShadowUnlit.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -729,6 +732,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{1C6265B5-ECEC-EE61-A943-9283544A5EE5}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{330C4E3F-24AC-BFB7-E49C-ECFC321DCF27}</Project>
       <Name>NavMeshComponentsEditor</Name>
